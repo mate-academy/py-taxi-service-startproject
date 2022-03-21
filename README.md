@@ -21,6 +21,7 @@ this app in settings.
 4. Inside `taxi/models.py` create models according to this diagram:
 
 ![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
+
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 standard `User` model should be replaced with the model `Driver`. Don't forget
 to register it in settings.
