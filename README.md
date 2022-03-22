@@ -25,5 +25,15 @@ this app is in settings.
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
 `Driver` has an additional field compared to the standard `User`. Don't forget
-to register it in settings.
-6. Make migrations and migrate.
+to register it in settings. 
+6. Edit `admin.py`:
+    - Register all your models in the admin. 
+    - Make Driver's field `licence_number` be 
+displayed as the other field. 
+    - Add `licence_number` to the `fieldsets`, so you
+can edit this field while updating `Driver`. 
+    - Add `licence_number` to the 
+`add_fieldset` so you can fill this field while adding a driver.
+    - Make it possible to search `Car` by `model` field.
+    - Make it possible to filter `Car` by `manufacturer`.
+7. Make migrations and migrate.
