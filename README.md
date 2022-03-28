@@ -23,11 +23,13 @@ this app in settings.
 ![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
 
 Note: `licence_number` field should be unique.
+
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
 `Driver` has an additional field compared to the standard `User`. Don't forget
 to register it in settings. To make correct model name display in the admin, 
 add `verbose_name` and `verbose_name_plural` inside `Driver` model.
+
 6. Edit `admin.py`:
     - Register all your models in the admin. 
     - Make Driver's field `licence_number` be 
@@ -38,4 +40,5 @@ can edit this field while updating `Driver`.
 `add_fieldset` so you can fill this field while adding a driver.
     - Make it possible to search `Car` by `model`.
     - Make it possible to filter `Car` by `manufacturer`.
+
 7. Make migrations and migrate.
