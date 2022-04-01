@@ -4,8 +4,8 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Manufacturer, Car, Driver
 
 
-@admin.register(admin.ModelAdmin)
-class ManufacturerAdmin:
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
     pass
 
 
@@ -20,6 +20,6 @@ class CarAdmin(admin.ModelAdmin):
 class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ("license_number",)
     fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number",)}),)
-    add_fieldsets = UserAdmin.fieldsets + (
+    add_fieldsets = UserAdmin.add_fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
     )
