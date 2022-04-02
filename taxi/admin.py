@@ -5,19 +5,19 @@ from taxi.models import Manufacturer, Car, Driver
 
 
 @admin.register(Manufacturer)
-class AdminManufacturer(admin.ModelAdmin):
+class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ["name", "country"]
 
 
 @admin.register(Car)
-class AdminCar(admin.ModelAdmin):
+class CarAdmin(admin.ModelAdmin):
     list_display = ["model", "manufacturer"]
     search_fields = ["model"]
     list_filter = ["manufacturer"]
 
 
 @admin.register(Driver)
-class AdminDriver(admin.ModelAdmin):
+class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ("license_number",)
     fieldsets = UserAdmin.fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
