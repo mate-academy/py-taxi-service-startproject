@@ -19,9 +19,9 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         to=Manufacturer,
         on_delete=models.CASCADE,
-        related_name="cars"
+        related_name="car_range"
     )
-    drivers = models.ManyToManyField(to=settings.AUTH_USER_MODEL, related_name="drivers")
+    drivers = models.ManyToManyField(to=settings.AUTH_USER_MODEL, related_name="my_cars")
 
     class Meta:
         ordering = ["model"]
