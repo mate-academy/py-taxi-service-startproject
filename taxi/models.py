@@ -17,10 +17,12 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=255)
 
     class Meta:
-        UniqueConstraint(
-            name="license_number",
-            fields=["license_number"],
-        )
+        constraints = [
+            UniqueConstraint(
+                name="license_number",
+                fields=["license_number"],
+            )
+        ]
 
         verbose_name = "driver"
         verbose_name_plural = "drivers"
