@@ -8,7 +8,8 @@ from taxi.models import Driver, Car, Manufacturer
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ('license_number',)
-    fieldsets = UserAdmin.fieldsets + (("Additional", {"fields": ("license_number", )}),)
+    fieldsets = UserAdmin.fieldsets + (("Additional",
+                                        {"fields": ("license_number", )}),)
 
 
 @admin.register(Car)
