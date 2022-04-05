@@ -11,22 +11,8 @@ class Manufacturer(models.Model):
         return f"{self.name} from {self.country}"
 
 
-class Car(models.Model):
-    model = models.CharField(max_length=255)
-    manufacturer = models.ForeignKey(
-        Manufacturer,
-        on_delete=models.CASCADE,
-    )
-
-    def __str__(self):
-        return self.model
-
-
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255)
-    cars = models.ManyToManyField(
-        Car,
-    )
 
     class Meta:
         constraints = [
@@ -37,3 +23,17 @@ class Driver(AbstractUser):
 
     def __str__(self):
         return self.license_number
+
+
+class Car(models.Model):
+    model = models.CharField(max_length=255)
+    manufacturer = models.ForeignKey(
+        Manufacturer,
+        on_delete=models.CASCADE,
+    )
+    drivers = models.ManyToManyField(
+        Driver,
+    )
+
+    def __str__(self):
+        return self.model
