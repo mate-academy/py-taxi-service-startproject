@@ -4,12 +4,12 @@ from django.db import models
 from django.db.models import Model, UniqueConstraint
 
 
-class Manufacturer(models.Model):
+class Manufacturer(Model):
     name = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
 
 
-class Car(models.Model):
+class Car(Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
         Manufacturer, on_delete=models.CASCADE, related_name="cars"
