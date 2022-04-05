@@ -17,7 +17,7 @@ class AdminCar(admin.ModelAdmin):
 
 
 @admin.register(Driver)
-class AdminDriver(admin.ModelAdmin):
+class AdminDriver(UserAdmin):
     list_display = UserAdmin.list_display + ("license_number",)
     fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number",)}),)
     add_fieldsets = UserAdmin.add_fieldsets + (
