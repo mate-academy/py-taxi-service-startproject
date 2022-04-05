@@ -4,15 +4,15 @@ from django.db.models.constraints import UniqueConstraint
 
 
 class Manufacturer(models.Model):
-    name = models.TextField()
-    country = models.TextField()
+    name = models.CharField(max_length=255)
+    country = models.CharField(max_length=255)
 
     def __str__(self):
         return f"{self.name} from {self.country}"
 
 
 class Car(models.Model):
-    model = models.TextField()
+    model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
         Manufacturer,
         on_delete=models.CASCADE,
