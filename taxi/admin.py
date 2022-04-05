@@ -10,7 +10,15 @@ class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ('license_number',)
     fieldsets = UserAdmin.fieldsets + (("Additional",
                                         {"fields": ("license_number", )}),)
-    add_fieldsets = UserAdmin.add_fieldsets + ({'additonal field': ('license_number',)},)
+    add_fieldsets = UserAdmin.add_fieldsets + (
+        (
+            None,
+            {
+                #"classes": ("wide",),
+                "fields": ('license_number',),
+            },
+        ),
+    )
 
 
 @admin.register(Car)
