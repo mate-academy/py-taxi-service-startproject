@@ -14,7 +14,6 @@ class DriverAdmin(UserAdmin):
         (
             None,
             {
-                #"classes": ("wide",),
                 "fields": ('license_number',),
             },
         ),
