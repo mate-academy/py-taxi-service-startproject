@@ -22,7 +22,7 @@ this app in settings.
 
 ![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
 
-Note: `licence_number` field should be unique.
+Note: `licence_number` and `Manufacturer: name` fields should be unique.
 
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
