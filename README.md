@@ -43,4 +43,4 @@ can edit this field while updating `Driver`.
 
 NOTE: Attach screenshots of all created pages on admin panel to pull request. It's important to attach images not links to them. See example:
 
-![image](https://mate-academy-images.s3.eu-central-1.amazonaws.com/python_pr_with_img_ex.png)
+![image](https://mate-academy-images.s3.eu-central-1.amazonaws.com/python_pr_with_images.png)
