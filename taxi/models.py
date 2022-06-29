@@ -22,6 +22,9 @@ class Car(models.Model):
     class Meta:
         ordering = ["model"]
 
+    def __str__(self):
+        return f"model:{self.model}, {self.manufacturer}"
+
 
 class Driver(AbstractUser):
     licence_number = models.CharField(max_length=63, unique=True)
