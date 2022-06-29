@@ -22,6 +22,6 @@ class DriverAdmin(UserAdmin):
         UserAdmin.add_fieldsets + ("Additional info", {"fields": ("license_number",)}),
     )
 
-    @admin.register(Manufacturer)
-    class ManufacturerAdmin(admin.ModelAdmin):
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
         pass
