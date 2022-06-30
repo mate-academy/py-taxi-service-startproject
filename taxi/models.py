@@ -8,6 +8,9 @@ class Manufacturer(models.Model):
                             unique=True)
     country = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.name
+
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
@@ -16,6 +19,9 @@ class Car(models.Model):
                                      null=True)
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL,
                                      related_name="cars")
+
+    def __str__(self):
+        return f"model: {self.model}, manufacturer: {self.manufacturer.name}"
 
 
 class Driver(AbstractUser):
@@ -26,5 +32,8 @@ class Driver(AbstractUser):
 
         verbose_name = "driver"
         verbose_name_plural = "drivers"
+
+    def __str__(self):
+        return self.username
 
 
