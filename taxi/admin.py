@@ -5,7 +5,6 @@ from taxi.models import Manufacturer, Driver, Car
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    # list_display = ["model", "manufacturer"]
     list_filter = ["manufacturer"]
     search_fields = ["model"]
 
@@ -22,6 +21,5 @@ class DriverAdmin(UserAdmin):
 
 
 admin.site.register(Manufacturer)
-# admin.site.register(Driver, UserAdmin)
-# admin.site.register(Car, CarAdmin)
+
 
