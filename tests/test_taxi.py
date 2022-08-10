@@ -4,7 +4,7 @@ from django.urls import reverse
 import os.path
 
 
-class AminSiteDriverTests(TestCase):
+class AdminSiteDriverTests(TestCase):
     def setUp(self) -> None:
         self.admin_user = get_user_model().objects.create_superuser(
             username="admin.user",
