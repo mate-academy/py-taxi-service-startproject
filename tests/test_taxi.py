@@ -35,6 +35,7 @@ class AminSiteDriverTests(TestCase):
     def test_additional_info_fields_in_driver_add(self):
         url = reverse("admin:taxi_driver_add")
         response = self.client.get(url)
+        response[]
 
         self.assertContains(response, "first_name")
         self.assertContains(response, "last_name")
@@ -42,7 +43,7 @@ class AminSiteDriverTests(TestCase):
         self.assertContains(response, "Additional info")
 
 
-class AminSiteManufacturerTests(TestCase):
+class AdminSiteManufacturerTests(TestCase):
     def setUp(self) -> None:
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
@@ -58,7 +59,7 @@ class AminSiteManufacturerTests(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
-class AminSiteCarTests(TestCase):
+class AdminSiteCarTests(TestCase):
     def setUp(self) -> None:
         self.client = Client()
         self.admin_user = get_user_model().objects.create_superuser(
