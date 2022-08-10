@@ -20,21 +20,18 @@ class AminSiteDriverTests(TestCase):
     def test_license_number_in_driver_changelist(self):
         url = reverse("admin:taxi_driver_changelist")
         response = self.client.get(url)
-        print(response)
 
         self.assertContains(response, self.driver.license_number)
 
     def test_license_number_in_driver_change(self):
         url = reverse("admin:taxi_driver_change", args=[self.driver.id])
         response = self.client.get(url)
-        print(response)
 
         self.assertContains(response, self.driver.license_number)
 
     def test_additional_info_fields_in_driver_add(self):
         url = reverse("admin:taxi_driver_add")
         response = self.client.get(url)
-        print(response)
 
         self.assertContains(response, "first_name")
         self.assertContains(response, "last_name")
