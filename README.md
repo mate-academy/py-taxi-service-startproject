@@ -40,7 +40,7 @@ category, so you can fill this field while adding a driver.
     - Make it possible to filter `Car` by `manufacturer`.
 
 7. Make migrations and migrate.
-8. Don't forget add .gitignore file before pushing.
+8. Don't forget add `.gitignore` file before pushing.
 
 NOTE: Attach screenshots of all created pages on admin panel to pull request. It's important to attach images not links to them. See example:
 
