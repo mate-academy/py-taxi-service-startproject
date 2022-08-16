@@ -41,6 +41,7 @@ category, so you can fill this field while adding a driver.
 
 7. Make migrations and migrate.
 8. Don't forget add `.gitignore` file before pushing.
+9. Use `python manage.py test` to run tests.
 
 NOTE: Attach screenshots of all created pages on admin panel to pull request. It's important to attach images not links to them. See example:
 
