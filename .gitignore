@@ -1,0 +1,5 @@
+.pytest_cache/
+**db.sqlite3
+venv/
+.idea/
+*.pyc
