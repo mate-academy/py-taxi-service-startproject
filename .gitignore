@@ -1,5 +1,10 @@
 .pytest_cache/
+__pycache__
+.pytest_cache
 **db.sqlite3
+/taxi_service/__pycache__
+/migrations/__pycache__
+tests/__pycache__
 venv/
 .idea/
 *.pyc
