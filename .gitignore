@@ -1,6 +1,4 @@
 venv
 db.sqlite3
 .idea
-taxi_service/asgi.py
-taxi_service/urls.py
-taxi_service/wsgi.py
+.pyc
