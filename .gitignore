@@ -1,5 +1,8 @@
 .idea
 .sqlite3
 .pyc
-tests/__pycache__/
+**__pycache__/
+db.sqlite3
+venv/
+
 
