@@ -8,7 +8,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=255)
 
     def __str__(self):
-        return f"{self.name}, country: {self.country}"
+        return f"{self.name}"
 
 
 class Car(models.Model):
