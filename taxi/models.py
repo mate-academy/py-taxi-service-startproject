@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -26,7 +27,7 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         to=Manufacturer, on_delete=models.CASCADE, related_name="cars"
     )
-    drivers = models.ManyToManyField(to=Driver, related_name="cars")
+    drivers = models.ManyToManyField(to=get_user_model(), related_name="cars")
 
     def __str__(self) -> str:
         return f"{self.manufacturer.name} {self.model}"
