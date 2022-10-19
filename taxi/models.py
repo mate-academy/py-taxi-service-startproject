@@ -10,7 +10,7 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ["name"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name} {self.country}"
 
 
@@ -22,7 +22,7 @@ class Car(models.Model):
     class Meta:
         ordering = ["model"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.model} {self.manufacturer}"
 
 
@@ -34,5 +34,5 @@ class Driver(AbstractUser):
         verbose_name = "driver"
         verbose_name_plural = "drivers"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.username} ({self.first_name} {self.last_name})"
