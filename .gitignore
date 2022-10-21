@@ -4,4 +4,4 @@ db.sqlite3
 venv
 .*pyc
 .pytest_cache
-.idea
+.idea/
