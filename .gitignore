@@ -1,6 +1,7 @@
 /db.sqlite3
 /venv/
 .idea/
+/inspectionProfiles
 *.pyc
 .pytest_cache/
 **__pycache__/
