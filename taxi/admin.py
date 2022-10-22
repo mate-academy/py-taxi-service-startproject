@@ -8,7 +8,7 @@ from taxi.models import Car, Manufacturer, Driver
 class CarAdmin(admin.ModelAdmin):
     list_display = ["model", "manufacturer", "list_of_drivers"]
     search_fields = ["model"]
-    list_filter = ["manufacturer"]
+    list_filter = ["manufacturer", "manufacturer__country"]
 
     @staticmethod
     def list_of_drivers(obj) -> str:
