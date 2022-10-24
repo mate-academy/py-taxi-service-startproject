@@ -15,8 +15,7 @@ class Manufacturer(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=63,
-                                      unique=True)
+    license_number = models.CharField(max_length=63, unique=True)
 
     class Meta:
         ordering = ["username"]
@@ -31,11 +30,10 @@ class Car(models.Model):
     model = models.CharField(max_length=100)
     drivers = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
-        related_name="drivers",)
+        related_name="drivers",
+    )
     manufacturer = models.ForeignKey(
-        to=Manufacturer,
-        on_delete=models.CASCADE,
-        related_name="cars"
+        to=Manufacturer, on_delete=models.CASCADE, related_name="cars"
     )
 
     class Meta:
