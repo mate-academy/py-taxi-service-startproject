@@ -1,3 +1,5 @@
-sqlite3
-idea
-pyc
+db.sqlite3
+*.idea
+*.pyc
+venv/
+__pycache__/
