@@ -8,6 +8,10 @@ from taxi.models import Car, Driver, Manufacturer
 class CarAdmin(admin.ModelAdmin):
     search_fields = ["model"]
     list_filter = ["manufacturer"]
+    fieldsets = [
+        ("Car", {"fields": ["model", "manufacturer"]}),
+        ("Drivers", {"fields": ["drivers"]})
+    ]
 
 
 @admin.register(Driver)
