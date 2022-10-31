@@ -23,7 +23,8 @@ class Driver(AbstractUser):
         verbose_name_plural = "Drivers(users)"
 
     def __str__(self):
-        return f"{self.username} ({self.first_name} {self.last_name} {self.license_number})"
+        return f"{self.username} ({self.first_name} " \
+               f"{self.last_name} {self.license_number})"
 
 
 class Car(models.Model):
@@ -32,7 +33,10 @@ class Car(models.Model):
         Manufacturer,
         on_delete=models.CASCADE,
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="drivers")
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="drivers"
+    )
 
     class Meta:
         ordering = ["model"]
