@@ -10,7 +10,7 @@ of the command). You should have such structure:
 ```
 py-taxi-service
 |-> venv
-|-> manage.py
+|-> manage.pygit checkout -b develop
 |-> taxi_service
     |-> __init__.py
     |-> settings.py
