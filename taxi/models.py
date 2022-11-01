@@ -26,10 +26,10 @@ class Driver(AbstractUser):
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
-        to=Manufacturer, on_delete=models.CASCADE, related_name="manufacturers"
+        to=Manufacturer, on_delete=models.CASCADE, related_name="cars"
     )
     drivers = models.ManyToManyField(
-        to=settings.AUTH_USER_MODEL, related_name="drivers"
+        to=settings.AUTH_USER_MODEL, related_name="cars"
     )
 
     def __str__(self):
