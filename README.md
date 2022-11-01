@@ -21,7 +21,7 @@ py-taxi-service
 
 ![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
 
-Note: `licence_number` and `Manufacturer: name` fields should be unique.
+Note: `license_number` and `Manufacturer: name` fields should be unique.
 
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
@@ -30,16 +30,18 @@ add `verbose_name` and `verbose_name_plural` inside `Driver` model.
 
 6. Edit `admin.py`:
     - Register all your models in the admin. 
-    - Make Driver's field `licence_number` be 
+    - Make Driver's field `license_number` be 
 displayed as the other field. 
-    - Add `licence_number` to the `fieldsets`, so you
-can edit this field while updating `Driver`. 
-    - Add `licence_number` to the 
-`add_fieldset` so you can fill this field while adding a driver.
+    - Add `license_number` to the `fieldsets` as `Additional info` 
+category, so you can edit this field while updating `Driver`. 
+    - Add `license_number` to the `add_fieldset` as `Additional info`
+category, so you can fill this field while adding a driver.
     - Make it possible to search `Car` by `model`.
     - Make it possible to filter `Car` by `manufacturer`.
 
 7. Make migrations and migrate.
+8. Don't forget add `.gitignore` file before pushing.
+9. Use `python manage.py test` to run tests.
 
 NOTE: Attach screenshots of all created pages on admin panel to pull request. It's important to attach images not links to them. See example:
 
