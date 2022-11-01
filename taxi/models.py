@@ -1,5 +1,8 @@
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+
+
 
 
 class Manufacturer(models.Model):
@@ -20,7 +23,6 @@ class Driver(AbstractUser):
     )
 
     class Meta:
-        verbose_name = "driver"
         verbose_name_plural = "All drivers"
 
     def __str__(self):
@@ -32,9 +34,13 @@ class Car(models.Model):
     manufactured = models.ForeignKey(
         Manufacturer,
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name="cars"
     )
-    drivers = models.ManyToManyField(Driver)
+    drivers = models.ManyToManyField(
+        to=settings.AUTH_USER_MODEL,
+        related_name="cars"
+    )
 
     class Meta:
         verbose_name_plural = "All cars"
