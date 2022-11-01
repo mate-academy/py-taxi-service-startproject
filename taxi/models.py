@@ -27,10 +27,10 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         Manufacturer,
         on_delete=models.CASCADE,
-        related_name="manufacturers",
+        related_name="cars",
     )
     drivers = models.ManyToManyField(
-        to=settings.AUTH_USER_MODEL, related_name="drivers"
+        to=settings.AUTH_USER_MODEL, related_name="cars"
     )
 
     class Meta:
