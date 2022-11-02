@@ -1,6 +1,5 @@
 *.db
 *.sqlite3
-*.idea
+*.idea/
 *.pyc
-tests/__pycache__/
-venv/
+.venv/
