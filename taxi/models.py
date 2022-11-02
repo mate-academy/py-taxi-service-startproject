@@ -11,7 +11,7 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ["name"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return str(self.name)
 
 
@@ -26,7 +26,7 @@ class Driver(AbstractUser):
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
-        to=Manufacturer,
+        Manufacturer,
         on_delete=models.CASCADE,
         related_name="cars"
     )
