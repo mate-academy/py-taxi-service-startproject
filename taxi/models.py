@@ -21,7 +21,7 @@ class Car(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(
-        max_length=255, unique=True, null=True, blank=True
+        max_length=255, unique=True
     )
 
     class Meta:
