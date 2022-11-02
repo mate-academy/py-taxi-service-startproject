@@ -19,7 +19,7 @@ py-taxi-service
 3. Inside `py-taxi-service` start application `taxi`.
 4. Inside `taxi/models.py` create models according to this diagram:
 
-![image](https://user-iages.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
+![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
 
 Note: `license_number` and `Manufacturer: name` fields should be unique.
 
