@@ -26,6 +26,3 @@ class Car(models.Model):
         related_name="cars"
     )
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
-
-
-
