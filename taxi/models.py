@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -24,7 +25,7 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars"
     )
-    drivers = models.ManyToManyField(Driver)
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
 
 
