@@ -1,5 +1,5 @@
 venv/
 *.db
-.idea
+.idea/
 *.sqlite3
 *.pyc
