@@ -13,13 +13,13 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ["model", "manufacturer"]
-    search_fields = ["manufacturer", "model"]
-    list_filter = ["model", "manufacturer"]
+    list_display = ("model", "manufacturer",)
+    search_fields = ("manufacturer__name", "model",)
+    list_filter = ("model", "manufacturer",)
 
 
 @admin.register(Manufacturer)
 class ManufacturerAdmin(admin.ModelAdmin):
-    list_display = ["name", "country"]
-    search_fields = ["name", "country"]
-    list_filter = ["country"]
+    list_display = ("name", "country",)
+    search_fields = ("name", "country",)
+    list_filter = ("country",)
