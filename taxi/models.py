@@ -24,7 +24,7 @@ class Driver(AbstractUser):
 
     def __str__(self):
         return f"{self.username} ({self.first_name}" \
-               f" {self.last_name}| licence: {self.license_number}"
+               f" {self.last_name} licence: {self.license_number}"
 
 
 class Car(models.Model):
