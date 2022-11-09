@@ -1,0 +1,13 @@
+*.log
+*.pot
+*.pyc
+media
+.DS_Store
+venv/
+.idea/
+.vscode/
+*.iml
+.env
+.pytest_cache/
+**__pycache__/
+**db.sqlite3
