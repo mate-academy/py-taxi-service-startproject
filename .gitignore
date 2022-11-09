@@ -3,4 +3,5 @@ venv
 dif
 .idea
 db.sqlite3
-pyc
+**.рус
+**/__pycache__
