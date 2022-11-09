@@ -1,0 +1,6 @@
+venv
+.vscode
+dif
+.idea
+db.sqlite3
+pyc
