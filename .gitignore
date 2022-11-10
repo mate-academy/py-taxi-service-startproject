@@ -1,7 +1,8 @@
-venv
+.idea
 .vscode
 dif
-.idea
-db.sqlite3
+venv
 **.рус
-**/__pycache__
+**__pycache__/
+taxi/migrations/__pycache__/
+db.sqlite3
