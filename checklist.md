@@ -1,9 +1,7 @@
 # Сheck Your Code Against the Following Points
 
-## Don't Push db files
-
+## Don't forget to add `.gitignore` file BEFORE pushing
 Make sure you don't push db files (files with `.sqlite`, `.db3`, etc. extension).
-Don't forget to add `.gitignore` file before pushing. 
 
 ## Don't Forget to Add Migrations to your PR
 This is a required for the tests to pass.
@@ -36,8 +34,11 @@ class Order(models.Model):
 
 Good example:
 ```python
+from django.conf import settings
+
+
 class Order(models.Model):
-    customer = models.ManyToManyField(AUTH_USER_MODEL)
+    customer = models.ManyToManyField(settings.AUTH_USER_MODEL)
 ```
 
 Bad example:
