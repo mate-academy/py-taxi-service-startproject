@@ -19,5 +19,7 @@ class CarAdmin(admin.ModelAdmin):
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     list_display = ["username", "first_name", "last_name", "license_number"]
-    fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number",)}),)
-    add_fieldsets = UserAdmin.add_fieldsets + (("Additional info", {"fields": ("license_number",)}),)
+    fieldsets = UserAdmin.fieldsets +\
+        (("Additional info", {"fields": ("license_number",)}),)
+    add_fieldsets = UserAdmin.add_fieldsets +\
+        (("Additional info", {"fields": ("license_number",)}),)
