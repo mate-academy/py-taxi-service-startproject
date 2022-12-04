@@ -25,3 +25,6 @@ class Car(models.Model):
                                      on_delete=models.CASCADE,
                                      related_name="cars")
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
+
+    def __str__(self):
+        return f"{self.manufacturer} ({self.model})"
