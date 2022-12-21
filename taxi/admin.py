@@ -23,4 +23,7 @@ class CarAdmin(admin.ModelAdmin):
     list_filter = ["manufacturer"]
 
 
-admin.site.register(Manufacturer)
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    list_filter = ["name"]
+    list_display = ["name", "country"]
