@@ -4,6 +4,9 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Manufacturer, Car, Driver
 
 
+admin.site.register(Manufacturer)
+
+
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     list_filter = ["manufacturer"]
@@ -21,4 +24,4 @@ class DriverAdmin(UserAdmin):
     )
 
 
-admin.site.register(Manufacturer)
+
