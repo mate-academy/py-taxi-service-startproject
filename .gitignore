@@ -1,5 +1,4 @@
 .idea
 db.sqlite3
 *.pyc
-taxi.__pycache__/
-taxi_service.__pycache__/
+__pycache__/
