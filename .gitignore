@@ -10,4 +10,7 @@
 /venvt
 *.sqlite3
 *.db3
-/__pycache__
+*.iml
+.pytest_cache/
+**__pycache__/
+*.pyc
