@@ -1,0 +1,6 @@
+venv/
+tests/
+.pytest_cache/
+*.idea
+*.pyc
+db.sqlite3
