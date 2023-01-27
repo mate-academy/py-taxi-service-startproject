@@ -7,11 +7,17 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
 
+    def __str__(self) -> str:
+        return f"{self.name} {self.country}"
+
 
 class Car(models.Model):
     model = models.CharField(max_length=63)
     manufacturer = models.ForeignKey("Manufacturer", on_delete=models.CASCADE)
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
+
+    def __str__(self) -> str:
+        return f"{self.model} {self.manufacturer}"
 
 
 class Driver(AbstractUser):
@@ -20,3 +26,6 @@ class Driver(AbstractUser):
     class Meta:
         verbose_name = "driver"
         verbose_name_plural = "drivers"
+
+    def __str__(self) -> str:
+        return self.username
