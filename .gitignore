@@ -5,3 +5,4 @@ pycache
 *.iml
 .env
 .github
+secret.txt
