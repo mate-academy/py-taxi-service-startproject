@@ -16,9 +16,10 @@ class AdminDriver(UserAdmin):
     search_fields = ("first_name", "last_name", "license_number", "username")
 
 @admin.register(Car)
-class AdminCAr(admin.ModelAdmin):
+class AdminCar(admin.ModelAdmin):
     list_filter = ("model",)
     search_fields = ("manufacturer",)
+    list_display = ("model", "manufacturer")
 
 @admin.register(Manufacturer)
 class AdminManufacture(admin.ModelAdmin):
