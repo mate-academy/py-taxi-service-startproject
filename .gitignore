@@ -1,0 +1,6 @@
+.github
+README.md
+checklist.md
+.idea
+db.sqlite3
+pyc
