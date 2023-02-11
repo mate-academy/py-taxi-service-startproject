@@ -1,6 +1,5 @@
-.github
-README.md
-checklist.md
-.idea
-db.sqlite3
-pyc
+/venv/
+__pycache__/
+*.pyc
+.idea/
+*.sqlite3
