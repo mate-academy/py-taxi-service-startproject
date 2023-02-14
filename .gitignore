@@ -4,4 +4,4 @@ db.sqlite3
 .github
 pycache
 README.md
-__pycache__
+**__pycache__/
