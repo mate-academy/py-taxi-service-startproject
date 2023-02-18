@@ -4,31 +4,17 @@ from django.db import models
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
-
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=["name"],
-                name="unique_name"
-            )
-        ]
 
     def __str__(self) -> str:
         return self.name
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255)
+    license_number = models.CharField(max_length=255, unique=True)
 
     class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=["license_number"],
-                name="unique_license_number"
-            )
-        ]
         verbose_name = "driver"
         verbose_name_plural = "drivers"
 
