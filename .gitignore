@@ -1,4 +1,4 @@
 .idea/
- venv/
- *.sqlite3
- *.pyc
+venv/
+*.sqlite3
+*.pyc
