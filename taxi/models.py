@@ -7,7 +7,7 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models. CharField(max_length=255)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name}, {self.country}"
 
 
@@ -18,7 +18,7 @@ class Driver(AbstractUser):
         verbose_name = "driver"
         verbose_name_plural = "drivers"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.username}, {self.license_number}"
 
 
@@ -27,5 +27,5 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     driver = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.model}, {self.manufacturer.name}"
