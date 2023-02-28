@@ -5,3 +5,4 @@ db.sqlite3
 taxi/__pycache__/
 taxi_service/__pycache__/
 tests/__pycache__/
+taxi/migrations/__pycache__/
