@@ -12,7 +12,7 @@ class Driver(AbstractUser):
     class Meta:
         ordering = ["username"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.username} ({self.first_name} {self.last_name})"
 
 
@@ -23,8 +23,8 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ["name"]
 
-    def __str__(self):
-        return self.name
+    def __str__(self) -> str:
+        return f"{self.name}"
 
 
 class Car(models.Model):
@@ -41,5 +41,5 @@ class Car(models.Model):
     class Meta:
         ordering = ["model"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.model}"
