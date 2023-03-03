@@ -1,4 +1,11 @@
 __pycache__
 .idea
+tests
 db.sqlite3
 venv
+profiles
+logs*/.log
+taxi/__pycache__/
+taxi_service/__pycache__/
+tests/__pycache__/
+taxi/migrations/__pycache__/
