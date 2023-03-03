@@ -7,6 +7,7 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
 
+
     def __str__(self):
         return self.name
 
