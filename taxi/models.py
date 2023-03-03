@@ -7,6 +7,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(
         max_length=255,
         verbose_name="license",
+        unique=True
     )
 
     class Meta:
@@ -17,7 +18,7 @@ class Driver(AbstractUser):
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=266)
 
     class Meta:
