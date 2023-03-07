@@ -1,13 +1,14 @@
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.forms import CharField
 
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
-    def __str__(self):
+    def __str__(self) -> CharField:
         return self.name
 
 
