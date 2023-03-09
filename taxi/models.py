@@ -17,7 +17,7 @@ class Manufacturer(models.Model):
 
 class Car(models.Model):
     model = models.CharField(max_length=63)
-    manufacturer = models.ForeignKey(Manufacturer,
+    manufacturer = models.OneToOneField(Manufacturer,
                                      on_delete=models.CASCADE,
                                      related_name="cars")
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
