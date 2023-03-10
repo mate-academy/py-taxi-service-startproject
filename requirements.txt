@@ -1,1 +1,1 @@
-Django~=4.1.7git rm --cached
+Django~=4.1.7
