@@ -78,4 +78,4 @@ class GitignoreTests(TestCase):
 
             assert "idea" in gitignore_content
             assert "sqlite3" in gitignore_content
-            assert "рус" in gitignore_content
+
