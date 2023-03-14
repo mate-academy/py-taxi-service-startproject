@@ -1,0 +1,7 @@
+/venv/
+/tests/
+db.sqlite3
+.idea/
+/venv/
+/.github/workflows/
+/.github/
