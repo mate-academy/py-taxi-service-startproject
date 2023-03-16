@@ -1,0 +1,7 @@
+venv
+.idea
+pycache
+taxi/__pycache__
+db.sqlite3
+tests
+
