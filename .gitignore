@@ -1,0 +1,6 @@
+venv
+README.md
+checklist.md
+db.sqlite3
+.idea
+*.pyc
