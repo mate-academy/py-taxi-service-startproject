@@ -1,9 +1,6 @@
 venv
-.idea
 pycache
-taxi/__pycache__
-taxi/migrations/__pycache__
-taxi_service/__pycache__
+.idea
+__pycache__
 db.sqlite3
-tests
 
