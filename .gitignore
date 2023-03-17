@@ -1,0 +1,17 @@
+.venv
+venv/
+*.log
+*.pot
+*.pyc
+__pycache__
+**db.sqlite3
+media
+*.bak
+.idea/
+checklist.md
+README.md
+*.iml
+.env
+.DS_Store
+.pytest_cache/
+**__pycache__/
