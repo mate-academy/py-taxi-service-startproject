@@ -1,28 +1,37 @@
 from django.contrib import admin
-from .models import Driver, Car
+from django.contrib.auth.admin import UserAdmin
 
-class DriverAdmin(admin.ModelAdmin):
-    list_display = ('username', 'first_name', 'last_name', 'email', 'driver_license_number')
-    fieldsets = (
-        (None, {'fields': ('username', 'password')}),
-        ('Personal info', {'fields': ('first_name', 'last_name', 'email')}),
-        ('Additional info', {'fields': ('driver_license_number',)}),
-        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
-        ('Important dates', {'fields': ('last_login', 'date_joined')}),
-    )
-    add_fieldsets = (
-        (None, {
-            'classes': ('wide',),
-            'fields': ('username', 'password1', 'password2'),
-        }),
-        ('Personal info', {'fields': ('first_name', 'last_name', 'email')}),
-        ('Additional info', {'fields': ('driver_license_number',)}),
-    )
+from taxi.models import Manufacturer, Car, Driver
 
+
+@admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ('model', 'manufacturer')
-    search_fields = ('model',)
-    list_filter = ('manufacturer',)
+    list_display = ["manufacturer", "model"]
+    list_filter = ["manufacturer"]
+    search_fields = ["model"]
 
-admin.site.register(Driver, DriverAdmin)
-admin.site.register(Car, CarAdmin)
+
+@admin.register(Driver)
+class DriverAdmin(UserAdmin):
+    list_display = (
+        UserAdmin.list_display + ("license_number",)
+    )
+    fieldsets = UserAdmin.fieldsets + (
+        ("Additional info",
+         {"fields": ("license_number",)}),
+    )
+    add_fieldsets = UserAdmin.add_fieldsets + (
+        (
+            "Additional info",
+            {
+                "fields": (
+                    "first_name",
+                    "last_name",
+                    "license_number",
+                )
+            },
+        ),
+    )
+
+
+admin.site.register(Manufacturer)
