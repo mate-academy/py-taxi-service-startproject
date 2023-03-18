@@ -19,7 +19,10 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars"
     )
-    drivers = models.ManyToManyField(to=settings.AUTH_USER_MODEL)
+    drivers = models.ManyToManyField(
+        to=settings.AUTH_USER_MODEL,
+        related_name="cars"
+    )
 
     def __str__(self) -> str:
         return f"{self.manufacturer.name} {self.model}"
