@@ -3,3 +3,6 @@ venv
 db.sqlite3
 pyc
 .env
+.DS_Store
+__pycashe__
+tests/__pycashe__
