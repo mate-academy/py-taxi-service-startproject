@@ -9,15 +9,11 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os
+
 from pathlib import Path
 
-from dotenv import load_dotenv
-# import decouple
 
-load_dotenv()
-
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = "dw2(_(4xhca3t8)wz=z+tn=%z8mrp1jeh=mxox3-cugo&a_i_l"
 
 
 
