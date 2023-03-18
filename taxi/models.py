@@ -9,7 +9,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=100)
 
     def __str__(self) -> str:
-        return f"{self.name}, country - {self.country}"
+        return f"{self.name}"
 
 
 class Driver(AbstractUser):
@@ -34,4 +34,4 @@ class Car(models.Model):
     drivers = models.ManyToManyField(AUTH_USER_MODEL)
 
     def __str__(self) -> str:
-        return f"{self.model}, {self.manufacturer}"
+        return f"{self.model}"
