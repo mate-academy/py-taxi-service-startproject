@@ -1,0 +1,10 @@
+venv/
+.github
+.idea
+.git
+.github/
+README.md
+checklist.md
+db.sqlite3
+__pycache__
+*.pyc
