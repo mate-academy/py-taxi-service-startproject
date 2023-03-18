@@ -14,7 +14,7 @@ from pathlib import Path
 
 import decouple
 
-# decouple.config()
+
 
 SECRET_KEY = decouple.config("SECRET_KEY")
 
