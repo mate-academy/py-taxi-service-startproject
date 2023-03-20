@@ -6,5 +6,5 @@ venv/
 .pytest_cache/
 .DS_Store
 *.iml
-.env
-.md
+*.env
+*.md
