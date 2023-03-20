@@ -1,0 +1,4 @@
+/.github/
+/tests/
+/venv/
+/db.sqlite3
