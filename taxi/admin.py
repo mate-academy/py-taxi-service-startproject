@@ -5,6 +5,7 @@ from taxi.models import Manufacturer, Car, Driver
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
+    list_display = ["model", "manufacturer"]
     search_fields = ["model"]
     list_filter = ["manufacturer"]
 
@@ -29,6 +30,4 @@ class DriverAdmin(UserAdmin):
         ),
     )
 
-# Register your models here.
 admin.site.register(Manufacturer)
-

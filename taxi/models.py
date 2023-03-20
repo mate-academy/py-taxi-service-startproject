@@ -3,9 +3,6 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
-
-
-# Create your models here.
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
