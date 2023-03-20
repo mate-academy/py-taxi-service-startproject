@@ -5,3 +5,8 @@
 /tests/
 /venv/
 /checklist.md
+pycache
+.idea
+.sqlite
+.db3
+.pyc
