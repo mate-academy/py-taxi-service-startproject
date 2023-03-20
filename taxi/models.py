@@ -9,7 +9,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=100)
 
     def __str__(self) -> str:
-        return f"{self.name}"
+        return self.name
 
 
 class Driver(AbstractUser):
@@ -30,8 +30,7 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars"
     )
-
-    drivers = models.ManyToManyField(AUTH_USER_MODEL)
+    drivers = models.ManyToManyField(AUTH_USER_MODEL, related_name="cars")
 
     def __str__(self) -> str:
-        return f"{self.model}"
+        return self.model
