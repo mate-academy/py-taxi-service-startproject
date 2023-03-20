@@ -8,3 +8,6 @@ __pycache__/
 *.log
 *.bak
 *.tmp
+/venv/
+/tests/
+/.github/
