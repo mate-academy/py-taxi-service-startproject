@@ -4,15 +4,15 @@ from django.contrib.auth.models import AbstractUser
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
-    country = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=63)
+    country = models.CharField(max_length=63, unique=True)
 
     def __str__(self) -> str:
         return f"{self.name} {self.country}"
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255, unique=True)
+    license_number = models.CharField(max_length=63, unique=True)
 
     class Meta:
         verbose_name = "driver"
@@ -32,4 +32,4 @@ class Car(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"{self.model} (manufacture: {self.manufacturer.name})"
+        return f"{self.model}: {self.manufacturer.name}"
