@@ -23,5 +23,5 @@ class CarAdmin(admin.ModelAdmin):
 
 
 @admin.register(Manufacturer)
-class Manufacturer(admin.ModelAdmin):
+class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ["name", "country"]
