@@ -9,3 +9,5 @@ __pycache__/
 *.log
 *.bak
 *.tmp
+taxi_service/wsgi.py
+taxi/migrations/__init__.py
