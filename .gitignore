@@ -1,5 +1,7 @@
-.venv
-.pycache
-.idea
-db.sqlite3
+/db.sqlite3
 /venv/
+pyc
+.idea
+__pycache__
+.pytest_cache/
+**__pycache__/
