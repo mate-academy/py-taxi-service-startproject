@@ -1,3 +1,5 @@
-/db.sqlite3
-/venv/pyvenv.cfg
-/venv/
+venv
+pycache
+.idea
+db.sqlite3
+__pycache__
