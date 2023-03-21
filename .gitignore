@@ -11,3 +11,4 @@ __pycache__/
 *.tmp
 taxi_service/wsgi.py
 taxi/migrations/__init__.py
+db.sqlite3
