@@ -1,0 +1,10 @@
+/db.sqlite3
+/.github/
+/venv/
+pycache
+.idea
+README.md
+checklist.md
+.sqlite
+.db3
+.pyc
