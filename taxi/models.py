@@ -25,7 +25,7 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         to=Manufacturer,
         related_name="cars",
-        on_delete=models.DO_NOTHING
+        on_delete=models.CASCADE
     )
     drivers = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
