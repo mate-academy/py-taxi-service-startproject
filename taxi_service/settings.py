@@ -100,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_MODEL_USER = "taxi.Driver"
+AUTH_USER_MODEL = "taxi.Driver"
 
 
 # Internationalization
