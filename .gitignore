@@ -1,0 +1,12 @@
+/db.sqlite3
+/.github/
+/README.md
+/manage.py
+/tests/
+/venv/
+/checklist.md
+pycache
+.idea
+.sqlite
+.db3
+.pyc
