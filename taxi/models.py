@@ -8,8 +8,8 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
 
-    def __str__(self):
-        return self.name
+    def __str__(self) -> str:
+        return f"Brand: {self.name}, Country: {self.country}"
 
 
 class Driver(AbstractUser):
