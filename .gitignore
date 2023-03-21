@@ -1,0 +1,14 @@
+venv/
+env/
+virtualenv/
+*.pyc
+__pycache__/
+.idea/
+.sqlite3
+.vscode/
+*.log
+*.bak
+*.tmp
+taxi_service/wsgi.py
+taxi/migrations/__init__.py
+db.sqlite3
