@@ -21,9 +21,6 @@ class Driver(AbstractUser):
     def __str__(self) -> str:
         return self.username
 
-    def __str__(self):
-        return f"{self.last_name} {self.first_name}"
-
 
 class Car(models.Model):
     model = models.CharField(max_length=63)
@@ -38,4 +35,4 @@ class Car(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"{self.model}"
+        return self.model
