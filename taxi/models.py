@@ -18,6 +18,10 @@ class Driver(AbstractUser):
         verbose_name = "driver"
         verbose_name_plural = "drivers"
 
+    def __str__(self) -> str:
+        return (f"({self.first_name}, {self.last_name}),"
+                f" license_number: {self.license_number}")
+
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
@@ -25,3 +29,6 @@ class Car(models.Model):
         to=Manufacturer, on_delete=models.CASCADE, related_name="cars"
     )
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
+
+    def __str__(self) -> str:
+        return f"{self.manufacturer} {self.model}"
