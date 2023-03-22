@@ -1,5 +1,5 @@
-from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db import models
 
 from taxi_service import settings
 
@@ -31,5 +31,4 @@ class Car(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"{self.model}"  # FIXME <-Here is an error(caused 'model' att).
-        # FIXME Got to use f_String, or rename our attribute"""
+        return self.model
