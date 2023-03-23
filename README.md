@@ -4,7 +4,6 @@ In this task, you will start project `Taxi service`.
 
 1. Create a virtual environment, activate it, and install django via pip:
 ```python
-pip install django
 ```
 **Remember**: everything you will do in this project, do with activated virtual
 environment.
