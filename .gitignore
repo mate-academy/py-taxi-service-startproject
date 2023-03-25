@@ -1,0 +1,5 @@
+venv/
+tests/
+.idea
+sqlite3
+pycache
