@@ -1,5 +1,5 @@
-venv/
-tests/
+venv
+tests
 .idea
-sqlite3
+db.sqlite3
 pycache
