@@ -1,0 +1,7 @@
+.pytest_cache/
+pyc
+.idea/
+venv/
+__pycache__
+**__pycache__/
+/db.sqlite3
