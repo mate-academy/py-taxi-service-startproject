@@ -1,0 +1,10 @@
+.idea/
+.idea/misc.xml
+.idea/py-taxi-service-startproject.iml
+venv/
+pycache/
+taxi/__pycache__/
+taxi/migrations/__pycache__/
+taxi_service/__pycache__/
+tests/__pycache__/
+db.sqlite3
