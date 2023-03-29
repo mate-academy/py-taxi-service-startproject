@@ -12,7 +12,9 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     list_display = [
-        "username", "license_number", "email", "first_name", "last_name", "is_staff"
+        "username", "license_number",
+        "email", "first_name",
+        "last_name", "is_staff"
     ]
 
     fieldsets = UserAdmin.fieldsets + ((
