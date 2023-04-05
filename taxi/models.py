@@ -32,8 +32,8 @@ class Car(models.Model):
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255)
 
-    verbose_name = "Driver"
-    verbose_name_plural = "Drivers"
+    verbose_name = "driver"
+    verbose_name_plural = "drivers"
 
     class Meta:
         constraints = [
