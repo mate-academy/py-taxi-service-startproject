@@ -1,0 +1,5 @@
+*.sqlite3
+.idea/
+venv/
+.env
+__pycach e__
