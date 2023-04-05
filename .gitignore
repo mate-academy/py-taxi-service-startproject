@@ -2,4 +2,4 @@
 .idea/
 venv/
 .env
-__pycach e__
+__pycache__/
