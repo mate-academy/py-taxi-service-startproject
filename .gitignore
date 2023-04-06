@@ -2,5 +2,6 @@ venv
 pycache
 .idea
 db.sqlite3
-**.pyc
-
+.pytest_cache/
+**__pycache__/
+*.pyc
