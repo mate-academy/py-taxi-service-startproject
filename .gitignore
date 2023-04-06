@@ -2,5 +2,5 @@ venv
 pycache
 .idea
 db.sqlite3
-.pyc
+**.pyc
 
