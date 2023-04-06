@@ -12,7 +12,7 @@ environment.
 2. Start project `taxi_service` inside the current directory (add `.` at the end
 of the command):
 ```python
-django-admin startproject taxi_service .
+django-admin startproject taxi_service. 
 ```
 
 You should have such structure:
