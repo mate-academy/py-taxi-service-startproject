@@ -25,7 +25,7 @@ class DriverAdmin(UserAdmin):
                     "last_name",
                     "license_number",
                 )
-            }
+            },
         ),
     )
 
