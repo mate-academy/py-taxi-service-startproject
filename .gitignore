@@ -1,0 +1,7 @@
+.venv
+.pytest_cache
+.README.md
+*.sqlite3
+*.db3
+*.idea
+*.pyc
