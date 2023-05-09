@@ -1,21 +1,14 @@
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.db.models import UniqueConstraint
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
     class Meta:
         ordering = ["name"]
-        constraints = [
-            UniqueConstraint(
-                fields=["name"],
-                name="uniq_manufacturer_name"
-            )
-        ]
 
     def __str__(self) -> str:
         return f"{self.name}"
@@ -43,16 +36,11 @@ class Car(models.Model):
 class Driver(AbstractUser):
     license_number = models.CharField(
         max_length=255,
+        unique=True
     )
 
     class Meta:
         ordering = ["username"]
-        constraints = [
-            UniqueConstraint(
-                fields=["license_number"],
-                name="uniq_license_number"
-            )
-        ]
 
     def __str__(self) -> str:
         return f"{self.username}: " \
