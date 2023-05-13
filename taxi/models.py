@@ -5,9 +5,6 @@ from django.db.models import UniqueConstraint
 from taxi_service import settings
 
 
-# from django.db.models import UniqueConstraint
-
-
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63)
     country = models.CharField(max_length=63)
