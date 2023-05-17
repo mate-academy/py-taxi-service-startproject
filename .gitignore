@@ -3,3 +3,4 @@ pycache
 venv
 .idea
 *.md
+sqlite3
