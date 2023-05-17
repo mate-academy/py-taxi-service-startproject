@@ -1,25 +1,5 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-
-.cache
-nosetests.xml
-db.sqlite3
-db.sqlite3-journal
-
-# pyenv
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project s# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-.idea
+.pytest_cache
 pycache
+venv
+.idea
+*.md
