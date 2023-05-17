@@ -1,7 +1,4 @@
-.pytest_cache
-pycache
 venv
 .idea
-*.md
 sqlite3
 pyc
