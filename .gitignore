@@ -1,4 +1,6 @@
-venv
-.idea
-sqlite3
-pyc
+     venv
+     .pyc
+     .idea
+     sqlite3
+     .md
+     cache
