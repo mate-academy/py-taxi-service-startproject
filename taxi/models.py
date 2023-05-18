@@ -18,10 +18,11 @@ class Car(models.Model):
     def __str__(self) -> str:
         return self.model
     
+
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=100, unique=True)
     
     class Meta:
-        verbose_name ="Driver"
-        verbose_name_plural ="Drivers"
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
     
