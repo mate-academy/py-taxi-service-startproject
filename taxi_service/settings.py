@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = "taxi.Driver"
+
 
 
 # Application definition
@@ -113,6 +113,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+AUTH_USER_MODEL = "taxi.Driver"
 
 
 # Static files (CSS, JavaScript, Images)
