@@ -6,17 +6,11 @@ from taxi_service import settings
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
     class Meta:
         ordering = ["name"]
-        constraints = [
-            UniqueConstraint(
-                fields=["name", ],
-                name="unique_constraint_name"
-            )
-        ]
 
     def __str__(self) -> str:
         return f"{self.name} - {self.country}"
@@ -35,18 +29,12 @@ class Car(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255)
+    license_number = models.CharField(max_length=255, unique=True)
 
     class Meta:
         ordering = ["username"]
         verbose_name = "driver"
         verbose_name_plural = "drivers"
-        constraints = [
-            UniqueConstraint(
-                fields=["license_number", ],
-                name="unique_constraint_license_number"
-            )
-        ]
 
     def __str__(self) -> str:
         return f"{self.username} ({self.first_name} {self.last_name})"
