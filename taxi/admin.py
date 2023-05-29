@@ -26,4 +26,3 @@ class DriverAdmin(UserAdmin):
         )}),
     )
 
-
