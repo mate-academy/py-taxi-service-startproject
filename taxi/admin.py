@@ -26,3 +26,7 @@ class DriverAdmin(UserAdmin):
         )}),
     )
 
+
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    list_display = ["name", "country"]
