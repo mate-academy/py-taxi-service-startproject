@@ -1,5 +1,4 @@
 venv/
-*.pyc
 __pycache__/
 .idea/
-*.sqlite3
+.sqlite3
