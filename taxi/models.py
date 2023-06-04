@@ -19,8 +19,8 @@ class Driver(AbstractUser):
 
     class Meta:
         ordering = ["username"]
-        verbose_name = "Car"
-        verbose_name_plural = "Cars"
+        verbose_name = "Driver"
+        verbose_name_plural = "Drivers"
 
 
 class Car(models.Model):
