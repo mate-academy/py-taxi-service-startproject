@@ -19,6 +19,7 @@ class CarAdmin(admin.ModelAdmin):
     def get_drivers(obj):
         return "\n".join([p.drivers for p in obj.drivers.all()])
 
+
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ("license_number",)
