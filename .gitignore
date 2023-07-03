@@ -1,6 +1,0 @@
-db.sqlite3
-.idea/
-.pytest_cache/
-.env/
-.venv/
-__pycache__/
