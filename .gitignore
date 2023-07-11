@@ -1,0 +1,12 @@
+# Django #
+__pycache__
+db.sqlite3
+.db3
+.idea
+
+# Environments
+venv
+
+
+
+
