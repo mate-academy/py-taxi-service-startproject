@@ -1,0 +1,10 @@
+venv/
+tests/
+.idea/
+taxi_service/__pycache__/
+taxi/__pycache__/
+taxi/__init__.py
+taxi/migrations/__pycache__/
+**db.sqlite3
+*.pyc
+!taxi/migrations/0001_initial.py
