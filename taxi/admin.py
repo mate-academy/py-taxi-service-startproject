@@ -21,6 +21,4 @@ class CarAdmin(admin.ModelAdmin):
     list_display = ["model", "manufacturer"]
 
 
-@admin.register(Manufacturer)
-class ManufacturerAdmin(admin.ModelAdmin):
-    pass
+admin.site.register(Manufacturer)
