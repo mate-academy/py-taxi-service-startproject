@@ -4,9 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Manufacturer, Driver, Car
 
 
-@admin.register(Manufacturer)
-class ManufacturerAdmin(admin.ModelAdmin):
-    pass
+admin.site.register(Manufacturer)
 
 
 @admin.register(Driver)
@@ -20,6 +18,4 @@ class DriverAdmin(UserAdmin):
     )
 
 
-@admin.register(Car)
-class CarAdmin(admin.ModelAdmin):
-    pass
+admin.site.register(Car)
