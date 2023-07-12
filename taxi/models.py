@@ -26,7 +26,10 @@ class Car(models.Model):
         on_delete=models.DO_NOTHING,
         related_name="cars"
     )
-    driver = models.ManyToManyField(to=settings.AUTH_USER_MODEL)
+    driver = models.ManyToManyField(
+        to=settings.AUTH_USER_MODEL,
+        related_name="cars"
+    )
 
     def __str__(self) -> str:
         return f"Model: {self.model} Manufacturer: {self.manufacturer}"
@@ -44,4 +47,3 @@ class Driver(AbstractUser):
                 name="unique_license_number"
             )
         ]
-
