@@ -22,10 +22,7 @@ class DriverAdmin(UserAdmin):
 
 class CarAdmin(admin.ModelAdmin):
     search_fields = ["model"]
-    list_display = [
-        "model",
-        "manufacturer",
-    ]
+    list_display = ["model", "manufacturer"]
     list_filter = ["manufacturer"]
 
 
