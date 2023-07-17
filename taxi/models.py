@@ -31,6 +31,7 @@ class Driver(AbstractUser):
 
     class Meta:
         verbose_name = "driver"
+
         verbose_name_plural = "drivers"
 
     def __str__(self):
