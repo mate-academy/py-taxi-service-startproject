@@ -2,6 +2,4 @@
 .idea
 db.sqlite3
 pyc
-taxi_service/__pycache__/
-taxi/__pycache__/
-taxi/migrations/__pycache__/
+**__pycache__/
