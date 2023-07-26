@@ -28,4 +28,3 @@ class CarAdmin(admin.ModelAdmin):
 @admin.register(Manufacturer)
 class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ["name", "country"]
-# admin.site.register(Manufacturer)
