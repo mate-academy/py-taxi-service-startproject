@@ -1,7 +1,8 @@
 asgiref==3.7.2
-black==23.7.0
-click==8.1.6
 Django==4.2.3
+python-decouple==3.8
 python-dotenv==1.0.0
 sqlparse==0.4.4
-
+attrs~=23.1.0
+click~=8.1.6
+packaging~=23.1
