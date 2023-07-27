@@ -5,6 +5,6 @@ db.sqlite3-journal
 
 .venv
 venv/
-.env
+taxi_service/.env
 
 .idea/
