@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+*.pyc
+*.pyo
+__pycache__/
+
+# SQLite database file
+*.sqlite3
+
+# IDE-specific files (e.g., for VSCode and PyCharm)
+.vscode/
+.idea/
+
+# Compiled Python files
+*.pyc
+
+# Log files
+*.log
+
+# Dependency directories
+env/
