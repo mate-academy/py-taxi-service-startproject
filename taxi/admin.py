@@ -22,4 +22,6 @@ class CarAdmin(admin.ModelAdmin):
     list_filter = ("manufacturer__name",)
 
 
-admin.site.register(Manufacturer)
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    pass
