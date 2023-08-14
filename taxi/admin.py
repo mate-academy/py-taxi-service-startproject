@@ -21,4 +21,6 @@ class CarAdmin(admin.ModelAdmin):
     search_fields = ["model"]
 
 
-admin.site.register(models.Manufacturer)
+@admin.register(models.Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    search_fields = ["name"]
