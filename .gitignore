@@ -16,3 +16,6 @@ __pycache__/
 # Project-specific settings
 taxi_service/__pycache__/
 taxi/__pycache__/
+
+# secret
+/taxi_service/.env

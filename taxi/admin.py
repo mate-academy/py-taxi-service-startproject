@@ -4,6 +4,11 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Car, Driver, Manufacturer
 
 
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    pass
+
+
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     list_filter = ["manufacturer"]
@@ -17,6 +22,3 @@ class DriverAdmin(UserAdmin):
     add_fieldsets = UserAdmin.add_fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
     )
-
-
-admin.site.register(Manufacturer)
