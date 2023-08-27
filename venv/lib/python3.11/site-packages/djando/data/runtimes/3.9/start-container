@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [ ! -d "venv" ]; then
+    echo "Creating a virtual environment..."
+    python -m venv venv
+
+    source venv/bin/activate
+
+    if [ -f "requirements.txt" ]; then
+      echo "Installing project dependencies..."
+      pip install -r requirements.txt
+    fi
+else
+  source venv/bin/activate
+fi
+
+/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
