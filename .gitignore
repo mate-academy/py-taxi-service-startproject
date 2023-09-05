@@ -3,5 +3,6 @@ pycache
 .idea
 etc
 .sqlite
+.sqlite3
 .db3
 etc. extension
