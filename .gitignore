@@ -1,0 +1,7 @@
+venv
+pycache
+.idea
+etc
+.sqlite
+.db3
+etc. extension
