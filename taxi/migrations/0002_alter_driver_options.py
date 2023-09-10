@@ -4,14 +4,17 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('taxi', '0001_initial'),
+        ("taxi", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='driver',
-            options={'ordering': ('username',), 'verbose_name': 'driver', 'verbose_name_plural': 'drivers'},
+            name="driver",
+            options={
+                "ordering": ("username",),
+                "verbose_name": "driver",
+                "verbose_name_plural": "drivers",
+            },
         ),
     ]
