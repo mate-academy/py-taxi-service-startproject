@@ -1,7 +1,6 @@
 /venv/
-/pycache
-.idea
+**/__pycache__/
+.idea/
 db.sqlite3
 .db3
 .sqlite
-__pycache__
