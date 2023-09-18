@@ -11,7 +11,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ["model", "manufactured",]
+    list_display = ["model", "manufactured", "get_drivers"]
     search_fields = ["model", ]
     list_filter = ["manufactured", ]
 
