@@ -1,0 +1,8 @@
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore SQLite database file
+db.sqlite3
+
+# Ignore Python compiled files
+*.pyc
