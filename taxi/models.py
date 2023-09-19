@@ -6,6 +6,9 @@ from django.db import models
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
+    
+    def __str__(self) -> str:
+        return self.name
 
 
 class Car(models.Model):
@@ -19,7 +22,8 @@ class Car(models.Model):
         settings.AUTH_USER_MODEL,
         related_name="cars"
     )
-
+def __str__(self) -> str:
+        return self.model
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
