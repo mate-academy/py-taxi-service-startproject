@@ -1,3 +1,10 @@
 venv/
-
 db.sqlite3
+.idea/
+.vscode/
+*.pyc
+coverage/
+htmlcov/
+.pytest_cache/
+.DS_Store
+Thumbs.db
