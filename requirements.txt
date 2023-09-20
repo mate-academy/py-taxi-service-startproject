@@ -1,0 +1,6 @@
+asgiref==3.7.2
+decouple==0.0.7
+Django==4.2.5
+python-decouple==3.8
+sqlparse==0.4.4
+tzdata==2023.3
