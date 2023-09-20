@@ -1,0 +1,8 @@
+venv/
+db.sqlite3
+**/__pycache__/
+<<<<<<< HEAD
+.idea/git reset HEAD~
+=======
+.idea/
+>>>>>>> 8993a29e4d3ba3896c6da02d91ba9072bb2a2d8b
