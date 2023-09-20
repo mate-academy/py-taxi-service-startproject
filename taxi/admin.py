@@ -17,17 +17,9 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ["model", "get_manufacturer", "get_drivers"]
+    list_display = ["model", "manufacturer"]
     list_filter = ["model", ]
     search_fields = ["model", ]
-
-    @staticmethod
-    def get_drivers(car):
-        return "\n".join([driver.username for driver in car.drivers.all()])
-
-    @staticmethod
-    def get_manufacturer(car):
-        return car.manufacturer.name
 
 
 @admin.register(Manufacturer)
