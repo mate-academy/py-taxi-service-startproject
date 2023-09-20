@@ -40,5 +40,3 @@ class Driver(AbstractUser):
 
     class Meta:
         ordering = ["last_name", "first_name"]
-        verbose_name = "driver"
-        verbose_name_plural = "drivers"
