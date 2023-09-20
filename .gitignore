@@ -1,8 +1,4 @@
 venv/
-<<<<<<< HEAD
-
-=======
->>>>>>> e398c41f7639bba06fef546186ab2d4c911c549d
 db.sqlite3
 .idea/
 .vscode/
