@@ -29,7 +29,8 @@ class Car(models.Model):
     )
     drivers = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
-        related_name="cars")
+        related_name="cars"
+    )
 
     def __str__(self) -> str:
         return f"{self.manufacturer.name} {self.model}"
