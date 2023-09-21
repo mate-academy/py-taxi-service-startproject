@@ -1,4 +1,4 @@
-.idea
-.sqlite3
-venv
-pyc
+.idea/
+venv/
+.pytest_cache/
+.pyc
