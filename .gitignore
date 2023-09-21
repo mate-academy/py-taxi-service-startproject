@@ -1,0 +1,14 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual Environment
+venv/
+
+# IDEs
+.idea/
+
+.sqlite3/
+
+# Dependency directories
+node_modules/

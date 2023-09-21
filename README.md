@@ -39,8 +39,7 @@ python manage.py startapp taxi
 
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
-`Driver` has an additional field compared to the standard `User`. To make correct model name display in the admin, 
-add `verbose_name` and `verbose_name_plural` inside `Driver` model.
+`Driver` has an additional field compared to the standard `User`.
 
 6. Edit `admin.py`:
     - Register all your models in the admin.
