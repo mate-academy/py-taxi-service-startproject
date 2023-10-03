@@ -11,6 +11,10 @@ class Manufacturer(models.Model):
         ordering = ("name", )
 
 
+class Driver(AbstractUser):
+    license_number = models.CharField(max_length=63, unique=True)
+
+
 class Car(models.Model):
     model = models.CharField(max_length=63)
     manufacturer = models.ForeignKey(Manufacturer,
@@ -18,7 +22,3 @@ class Car(models.Model):
                                      related_name="cars")
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL,
                                      related_name="cars")
-
-
-class Driver(AbstractUser):
-    license_number = models.CharField(max_length=63, unique=True)
