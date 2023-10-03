@@ -1,4 +1,4 @@
 venv
-idea
-sqlite3
+.idea
+db.sqlite3
 pyc
