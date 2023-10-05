@@ -1,0 +1,7 @@
+[flake8]
+inline-quotes = "
+ignore = Q000, ANN204, ANN101
+exclude =
+    **migrations
+    venv
+    tests
