@@ -2,3 +2,4 @@ venv
 idea
 sqlite3
 .pytest_cache/
+pyc
