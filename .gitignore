@@ -1,4 +1,5 @@
-__pycache__/
+taxi.__pycache__
+taxi_service.__pycache__
 *.py[cod]
 *$py.class
 
