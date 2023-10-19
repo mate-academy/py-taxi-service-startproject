@@ -16,6 +16,10 @@ class Driver(AbstractUser):
         max_length=255, unique=True
     )
 
+    class Meta:
+        verbose_name = "Driver"
+        verbose_name_plural = "Drivers"
+
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
