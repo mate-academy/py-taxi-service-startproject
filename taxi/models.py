@@ -17,19 +17,19 @@ class Driver(AbstractUser):
     )
 
     class Meta:
-        verbose_name = "Driver"
-        verbose_name_plural = "Drivers"
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
 
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
         to=Manufacturer, on_delete=models.PROTECT,
-        related_name="manufacturer"
+        related_name="cars"
     )
     drivers = models.ManyToManyField(
         get_user_model(),
-        related_name="drivers",
+        related_name="cars",
         blank=True
     )
 
