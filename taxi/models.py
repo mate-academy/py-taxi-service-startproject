@@ -6,7 +6,7 @@ from taxi_service import settings
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63)
-    Country = models.CharField(max_length=63)
+    country = models.CharField(max_length=63)
 
     def __str__(self):
         return self.name
@@ -24,5 +24,5 @@ class Car(models.Model):
     )
     drivers = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
-
+        related_name="cars"
     )
