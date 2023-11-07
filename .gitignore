@@ -3,3 +3,6 @@ pycache
 .idea
 db.sqlite3
 sqlite3
+/prn_scrin.jpg
+/taxi_service/__pycache__
+/taxi/__pycache__
