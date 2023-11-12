@@ -1,4 +1,7 @@
 venv
 db.sqlite3
 .idea
-pyc
+*.pyc
+**__pycache__/
+.pytest_cache
+.github
