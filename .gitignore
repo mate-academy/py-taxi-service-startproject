@@ -1,0 +1,7 @@
+vscode/
+venv
+*.pyc
+*.log
+db.sqlite3
+.idea
+pycache
