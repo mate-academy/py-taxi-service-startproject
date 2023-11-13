@@ -11,12 +11,18 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ("name", )
 
+    def __str__(self) -> str:
+        return f"{self.name} {self.country}"
+
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
     class Meta:
         ordering = ("username", )
+
+    def __str__(self) -> str:
+        return f"{self.license_number}"
 
 
 class Car(models.Model):
@@ -30,3 +36,6 @@ class Car(models.Model):
 
     class Meta:
         ordering = ("model", )
+
+    def __str__(self) -> str:
+        return f"{self.model} {self.manufacturer}"
