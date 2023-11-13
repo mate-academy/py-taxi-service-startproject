@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE-specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.pyproj
+
+# Logs
+*.log
+
+# Package distribution / build
+dist/
+build/
+
+# Local environment variables
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+.DS_Store
+.github/workflows/test.yml
+db.sqlite3
