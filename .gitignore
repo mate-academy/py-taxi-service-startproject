@@ -3,5 +3,7 @@ venv
 *.pyc
 *.log
 db.sqlite3
-.idea
+.idea/
 pycache
+**__pycache__/
+*.iml
