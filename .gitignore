@@ -2,7 +2,8 @@
 .vscode/
 venv/
 *.pyc
-__pycache__/
+**__pycache__/
+*.iml
 .env
 db.sqlite3
 .pytest_cache/
