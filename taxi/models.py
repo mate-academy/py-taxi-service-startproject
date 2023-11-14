@@ -4,7 +4,6 @@ from django.db import models
 
 
 class Manufacturer(models.Model):
-
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=63)
 
@@ -12,7 +11,7 @@ class Manufacturer(models.Model):
         return f"{self.name} ({self.country})"
 
     class Meta:
-        ordering = ("name", )
+        ordering = ("name",)
 
 
 class Driver(AbstractUser):
@@ -22,17 +21,20 @@ class Driver(AbstractUser):
         return f"{self.get_full_name()} ({self.license_number})"
 
     class Meta:
-        ordering = ("last_name", )
+        ordering = ("last_name",)
 
 
 class Car(models.Model):
-
     model = models.CharField(max_length=255)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.SET_NULL, null=True, blank=True)
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
+    manufacturer = models.ForeignKey(
+        Manufacturer, on_delete=models.SET_NULL, null=True, blank=True
+    )
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL, related_name="cars"
+    )
 
     def __str__(self):
         return f"{self.manufacturer} model: {self.model}"
 
     class Meta:
-        ordering = ("model", )
+        ordering = ("model",)
