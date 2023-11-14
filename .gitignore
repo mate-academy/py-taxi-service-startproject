@@ -5,3 +5,4 @@ db.sqlite3
 **__pycache__/
 .pytest_cache
 .github
+/taxi/__pycache__/
