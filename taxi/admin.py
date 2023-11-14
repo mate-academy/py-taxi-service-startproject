@@ -4,9 +4,6 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Manufacturer, Driver, Car
 
 
-# Register your models here.
-
-
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     list_display = UserAdmin.list_display + ("license_number",)

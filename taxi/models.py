@@ -4,7 +4,6 @@ from django.db import models
 from taxi_service import settings
 
 
-# Create your models here.
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
