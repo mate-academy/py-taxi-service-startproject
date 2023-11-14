@@ -7,13 +7,13 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('taxi', '0003_alter_car_options_alter_driver_options_and_more'),
+        ("taxi", "0003_alter_car_options_alter_driver_options_and_more"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='car',
-            name='manufacturer',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='cars', to='taxi.manufacturer'),
+            model_name="car",
+            name="manufacturer",
+            field=models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name="cars", to="taxi.manufacturer"),
         ),
     ]

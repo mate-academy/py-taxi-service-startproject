@@ -8,7 +8,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=255)
 
     class Meta:
-        ordering = ('name',)
+        ordering = ("name",)
 
     def __str__(self):
         return self.name
@@ -18,11 +18,9 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
 
     class Meta:
-        ordering = ('username',)
+        ordering = ("username",)
 
     def __str__(self) -> str:
-        if self.first_name and self.last_name:
-            return f"{self.first_name} {self.last_name}"
         return self.username
 
 
@@ -31,10 +29,10 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         Manufacturer, related_name="cars", on_delete=models.DO_NOTHING
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
 
     class Meta:
-        ordering = ('model',)
+        ordering = ("model",)
 
     def __str__(self) -> str:
         return self.model
