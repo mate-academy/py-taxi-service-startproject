@@ -75,7 +75,7 @@ class GitignoreTests(TestCase):
         assert file_exists
 
     def test_gitignore_has_correct_content(self):
-        with open("../.gitignore", "r") as gitignore:
+        with open(".gitignore", "r") as gitignore:
             gitignore_content = gitignore.read()
 
             assert "idea" in gitignore_content
