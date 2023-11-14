@@ -20,6 +20,9 @@ class Driver(AbstractUser):
     class Meta:
         ordering = ("username",)
 
+    def __str__(self) -> str:
+        return f"{self.username} ({self.first_name} {self.last_name})"
+
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
