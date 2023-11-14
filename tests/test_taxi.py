@@ -71,7 +71,7 @@ class AdminSiteCarTests(TestCase):
 
 class GitignoreTests(TestCase):
     def test_gitignore_exist(self):
-        file_exists = os.path.exists("../.gitignore")
+        file_exists = os.path.exists(".gitignore")
         assert file_exists
 
     def test_gitignore_has_correct_content(self):
