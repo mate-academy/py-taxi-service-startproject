@@ -22,11 +22,6 @@ class Car(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
-    is_staff = models.BooleanField(
-        "staff status",
-        default=True,
-        help_text="Designates whether the user can log into this admin site.",
-    )
 
     class Meta:
         verbose_name_plural = "drivers"
