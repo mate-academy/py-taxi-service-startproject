@@ -3,7 +3,6 @@ from django.contrib.auth.admin import UserAdmin
 from taxi.models import Manufacturer, Driver, Car
 
 
-# Register your models here.
 admin.site.register(Manufacturer)
 
 
