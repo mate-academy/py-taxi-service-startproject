@@ -3,7 +3,6 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
-# Create your models here.
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
@@ -11,7 +10,7 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ("name", )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
@@ -22,12 +21,15 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars",
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="cars",
+    )
 
     class Meta:
         ordering = ("manufacturer", )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.manufacturer.name} {self.model}"
 
 
@@ -35,7 +37,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
     class Meta:
-        ordering =("username", )
+        ordering = ("username", )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.username}: {self.first_name} {self.last_name}"
