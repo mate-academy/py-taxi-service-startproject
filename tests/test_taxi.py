@@ -2,6 +2,10 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 import os.path
+import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "taxi_service.settings")
+django.setup()
 
 
 class AdminSiteDriverTests(TestCase):
@@ -12,9 +16,7 @@ class AdminSiteDriverTests(TestCase):
         )
         self.client.force_login(self.admin_user)
         self.driver = get_user_model().objects.create_user(
-            username="test.user",
-            password="2wsxvfr4",
-            license_number="TES12345"
+            username="test.user", password="2wsxvfr4", license_number="TES12345"
         )
 
     def test_license_number_in_driver_changelist(self):
@@ -69,7 +71,7 @@ class AdminSiteCarTests(TestCase):
 
 class GitignoreTests(TestCase):
     def test_gitignore_exist(self):
-        file_exists = os.path.exists('.gitignore')
+        file_exists = os.path.exists(".gitignore")
         assert file_exists
 
     def test_gitignore_has_correct_content(self):

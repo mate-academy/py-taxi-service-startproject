@@ -1,0 +1,10 @@
+.sqlite3
+pyc
+.pytest_cache
+.venv
+.pytest_cache\n.venv\n
+idea
+.idea/
+pycache
+taxi_service/__pycashe__
+
