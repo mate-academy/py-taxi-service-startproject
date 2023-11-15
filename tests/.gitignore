@@ -5,4 +5,6 @@ pyc
 .pytest_cache\n.venv\n
 idea
 .idea/
-.pycache
+pycache
+taxi_service/__pycashe__
+
