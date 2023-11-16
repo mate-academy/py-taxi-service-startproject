@@ -13,5 +13,4 @@ db.sqlite3
 # Logs
 *.log
 
-# Ignore migrations for now
-**/migrations/
+
