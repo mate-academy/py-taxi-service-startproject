@@ -5,14 +5,7 @@ from taxi.models import Driver, Car, Manufacturer
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
-    list_display = (
-        "license_number",
-        "username",
-        "email",
-        "first_name",
-        "last_name",
-        "password",
-    )
+    list_display = UserAdmin.list_display
 
     fieldsets = UserAdmin.fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
