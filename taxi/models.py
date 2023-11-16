@@ -25,7 +25,6 @@ class Driver(AbstractUser):
 
     class Meta:
         verbose_name_plural = "drivers"
-        swappable = 'AUTH_USER_MODEL'
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
