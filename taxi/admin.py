@@ -20,5 +20,6 @@ class DriverAdmin(UserAdmin):
         ("Additional info", {"fields": ("license_number",)}),
     )
 
-
-admin.site.register(Manufacturer)
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    pass
