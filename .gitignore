@@ -1,10 +1,5 @@
-.idea/
-.vscode/
-*.iml
-.env
-venv/
-.pytest_cache/
-**__pycache__/
 *.pyc
-**db.sqlite3
+*.sqlite3
+.idea/
+venv/
 passwords/
