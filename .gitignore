@@ -1,7 +1,10 @@
-/db.sqlite3
-/venv/
-/.idea/
+.idea/
+.vscode/
+*.iml
+.env
+venv/
+.pytest_cache/
+**__pycache__/
 *.pyc
-*.sqlite3
-.pytest_cache
-.pycache
+**db.sqlite3
+passwords/
