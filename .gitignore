@@ -2,6 +2,7 @@
 .vscode/
 *.iml
 .env
+.env.sample
 venv/
 .pytest_cache/
 **__pycache__/
