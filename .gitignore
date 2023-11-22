@@ -3,8 +3,6 @@
 *.iml
 .env
 venv
-venv/
-!decouple/
 .pytest_cache/
 **__pycache__/
 *.pyc
