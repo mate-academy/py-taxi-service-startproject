@@ -2,6 +2,7 @@
 .vscode/
 *.iml
 .env
+venv
 venv/
 !decouple/
 .pytest_cache/
