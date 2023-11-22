@@ -1,5 +1,5 @@
 .idea/*
 venv/*
-tests/__pychach__/*
+*/__pycache__/*
 
 db.sqlite3
