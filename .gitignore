@@ -1,5 +1,7 @@
 .idea/*
 venv/*
 */__pycache__/*
-
+taxi/__pycache__/*
+taxi_service/__pycache__/*
+taxi/migrations/__pycache__/*
 db.sqlite3
