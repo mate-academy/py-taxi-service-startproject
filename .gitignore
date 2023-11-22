@@ -2,3 +2,4 @@
 venv/*
 tests/__pychach__/*
 /*
+db.sqlite3
