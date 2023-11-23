@@ -18,4 +18,6 @@ class DriverAdmin(UserAdmin):
     add_fieldsets = UserAdmin.add_fieldsets + (("Additional info", {"fields": ("license_number", )}), )
 
 
-admin.site.register(Manufacturer)
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    list_display = ["name", "country", ]
