@@ -1,0 +1,7 @@
+asgiref==3.7.2
+colorama==0.4.6
+config==0.5.1
+Django==4.2.7
+python-decouple==3.8
+sqlparse==0.4.4
+tzdata==2023.3
