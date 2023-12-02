@@ -5,8 +5,12 @@ from taxi.models import *
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
-
-
+    list_display = ["username",
+                    "email",
+                    "license_number",
+                    "first_name",
+                    "last_name",
+                    "is_staff",]
     fieldsets = UserAdmin.fieldsets + (
         ("Additional info", {"fields": ("license_number",)}),
     )

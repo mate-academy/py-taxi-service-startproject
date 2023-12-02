@@ -12,15 +12,12 @@ class AdminSiteDriverTests(TestCase):
         )
         self.client.force_login(self.admin_user)
         self.driver = get_user_model().objects.create_user(
-            username="test.user",
-            password="2wsxvfr4",
-            license_number="TES12345"
+            username="test.user", password="2wsxvfr4", license_number="TES12345"
         )
 
     def test_license_number_in_driver_changelist(self):
         url = reverse("admin:taxi_driver_changelist")
         response = self.client.get(url)
-
         self.assertContains(response, self.driver.license_number)
 
     def test_license_number_in_driver_change(self):
@@ -69,7 +66,7 @@ class AdminSiteCarTests(TestCase):
 
 class GitignoreTests(TestCase):
     def test_gitignore_exist(self):
-        file_exists = os.path.exists('.gitignore')
+        file_exists = os.path.exists(".gitignore")
         assert file_exists
 
     def test_gitignore_has_correct_content(self):

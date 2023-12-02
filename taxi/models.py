@@ -31,6 +31,5 @@ class Car(models.Model):
         blank=True,
     )
 
-
     def __str__(self) -> str:
         return f"{self.manufacturer} {self.model}"
