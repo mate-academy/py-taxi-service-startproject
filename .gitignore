@@ -1,5 +1,4 @@
 /venv/
 /.idea/
 db.sqlite3
-#.pytest_cache/
 **__pycache__/
