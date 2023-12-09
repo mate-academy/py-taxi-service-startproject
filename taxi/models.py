@@ -31,12 +31,6 @@ class Driver(AbstractUser):
             )
         ]
 
-    def update_license_number(self, new_license_number, password, additional_info):
-        self.license_number = new_license_number
-        self.password = password
-        self.additional_info = additional_info
-        self.save()
-
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
