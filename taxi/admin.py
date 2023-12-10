@@ -6,14 +6,14 @@ from taxi.models import Manufacturer, Car, Driver
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
-    list_display = UserAdmin.list_display + ("licence_number", )
+    list_display = UserAdmin.list_display + ("license_number", )
     fieldsets = UserAdmin.fieldsets + ((
         "Additional info",
-        {"fields": ("licence_number",)},
+        {"fields": ("license_number",)},
     ),)
     add_fieldsets = UserAdmin.add_fieldsets + ((
         "Additional info",
-        {"fields": ("licence_number",)},
+        {"fields": ("license_number",)},
     ),)
 
 
