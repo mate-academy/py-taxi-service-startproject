@@ -4,8 +4,12 @@ from django.conf import settings
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=50, unique=True, null=True, blank=True)
-    country = models.CharField(max_length=50, null=True, blank=True)
+    name = models.CharField(
+        max_length=50, unique=True, null=True, blank=True
+    )
+    country = models.CharField(
+        max_length=50, null=True, blank=True
+    )
 
     class Meta:
         verbose_name = 'manufacturer'
@@ -16,9 +20,15 @@ class Manufacturer(models.Model):
 
 
 class Car(models.Model):
-    model = models.CharField(max_length=50, null=True, blank=True)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
+    model = models.CharField(
+        max_length=50, null=True, blank=True
+    )
+    manufacturer = models.ForeignKey(
+        Manufacturer, on_delete=models.CASCADE
+    )
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL, related_name="cars"
+    )
 
     class Meta:
         verbose_name = 'Car'
@@ -29,7 +39,9 @@ class Car(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=50, unique=True, null=True, blank=True)
+    license_number = models.CharField(
+        max_length=50, unique=True, null=True, blank=True
+    )
 
     class Meta:
         verbose_name = 'driver'
