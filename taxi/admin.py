@@ -17,14 +17,22 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
+    list_display = [
+        "model",
+        "manufacturer",
+    ]
     search_fields = [
         "model",
     ]
     list_filter = [
+        "model",
         "manufacturer",
     ]
 
 
 @admin.register(Manufacturer)
 class Manufacturer(admin.ModelAdmin):
-    pass
+    list_display = [
+        "name",
+        "country",
+    ]
