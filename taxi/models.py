@@ -10,9 +10,6 @@ class Driver(AbstractUser):
     class Meta:
         ordering = ("username", )
 
-    def __str__(self) -> str:
-        return str(self.username)
-
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
@@ -20,9 +17,6 @@ class Manufacturer(models.Model):
 
     class Meta:
         ordering = ("name", )
-
-    def __str__(self) -> str:
-        return str(self.name)
 
 
 class Car(models.Model):
@@ -39,6 +33,3 @@ class Car(models.Model):
 
     class Meta:
         ordering = ("model", )
-
-    def __str__(self) -> str:
-        return str(self.model)
