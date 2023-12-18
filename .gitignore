@@ -1,3 +1,12 @@
-/db.sqlite3
-**__pycache__/
+*.idea/
+.vscode/
+*.iml
+.env
+.DS_Store
+venv/
+tests/
+.pytest_cache/
+*.sqlite3
 *.pyc
+.github
+**__pycache__/
