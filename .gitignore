@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+
+# Local development settings
+*.sqlite3
+*.pyc
+*.pyo
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Project-specific settings
+taxi_service/__pycache__/
+taxi/__pycache__/
