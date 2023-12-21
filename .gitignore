@@ -1,16 +1,17 @@
- *.py[cod]
- *$py.class
- local_settings.py
- venv/
- db.sqlite3
- staticfiles/
- media/
- .idea/
- .vscode/
- *.pyc
- *~
- *.bak
- .pytest_cache/
- log/
- logs/
- Thumbs.db
+__pycache__/
+*.py[cod]
+*$py.class
+local_settings.py
+venv/
+db.sqlite3
+staticfiles/
+media/
+.idea/
+.vscode/
+*.pyc
+*~
+*.bak
+.pytest_cache/
+log/
+logs/
+Thumbs.db
