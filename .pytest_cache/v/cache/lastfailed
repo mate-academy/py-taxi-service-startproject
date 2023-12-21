@@ -1,0 +1,9 @@
+{
+  "tests/test_taxi.py::AdminSiteDriverTests::test_additional_info_fields_in_driver_add": true,
+  "tests/test_taxi.py::AdminSiteDriverTests::test_license_number_in_driver_change": true,
+  "tests/test_taxi.py::AdminSiteDriverTests::test_license_number_in_driver_changelist": true,
+  "tests/test_taxi.py::AdminSiteManufacturerTests::test_manufacturer_is_register_in_admin": true,
+  "tests/test_taxi.py::AdminSiteCarTests::test_car_is_register_in_admin": true,
+  "tests/test_taxi.py::GitignoreTests::test_gitignore_exist": true,
+  "tests/test_taxi.py::GitignoreTests::test_gitignore_has_correct_content": true
+}
