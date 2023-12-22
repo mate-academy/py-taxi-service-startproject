@@ -2,5 +2,6 @@
 db.sqlite3
 pyc
 venv
-__pycache__
+pycache
 etc.
+.pytest_cache
