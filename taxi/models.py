@@ -5,9 +5,6 @@ from django.contrib.auth.models import AbstractUser
 import taxi_service.settings
 
 
-# Create your models here.
-
-
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
     country = models.CharField(max_length=63)
