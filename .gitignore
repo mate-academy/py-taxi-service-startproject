@@ -1,0 +1,7 @@
+venv/
+
+pycahe/
+
+.idea/
+
+*.sqlite3
