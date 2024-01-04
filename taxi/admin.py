@@ -19,4 +19,3 @@ class DriverAdmin(UserAdmin):
 
 
 admin.site.register(Manufacturer)
-# Register your models here.
