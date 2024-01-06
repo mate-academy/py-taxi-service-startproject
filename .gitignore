@@ -1,8 +1,7 @@
-.idea/
-.vscode/
-*.iml
-.env
-.DS_Store
-venv/
-.pytest_cache/
+/venv/
 **__pycache__/
+**db.sqlite3
+/.idea/
+/taxi/migrations/__pycache__/
+/tests/__pycache__/
+.pytest_cache/
