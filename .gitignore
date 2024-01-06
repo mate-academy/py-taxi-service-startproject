@@ -2,3 +2,4 @@ venv/
 pycahe/
 .idea/
 *.sqlite3
+__pycache__/
