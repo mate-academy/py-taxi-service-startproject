@@ -3,4 +3,4 @@ venv/
 .idea/
 tests/
 db.sqlite3
-pyc
+.pyc
