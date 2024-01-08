@@ -1,0 +1,7 @@
+migrations/
+venv/
+.pytest_cache/
+.idea/
+tests/
+db.sqlite3
+.pyc
