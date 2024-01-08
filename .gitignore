@@ -1,5 +1,4 @@
 venv
-__pychache__
+pychache
 idea
 db.sqlite3
-.pytest_cache
