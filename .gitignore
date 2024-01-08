@@ -1,0 +1,5 @@
+venv
+__pychache__
+idea
+db.sqlite3
+.pytest_cache
