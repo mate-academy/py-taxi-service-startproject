@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+*.iml
+.env
+.DS_Store
+.flake8
+venv/
+.pytest_cache/
+**__pycache__/
+*.pyc
+**db.sqlite3
