@@ -19,13 +19,11 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         Manufacturer,
         on_delete=models.CASCADE,
-        related_name="Manufacturer"
+        related_name="Cars_Manufacturer"
     )
-    drivers = models.ForeignKey(
+    drivers = models.ManyToManyField(
         Driver,
-        on_delete=models.SET_NULL,
-        null=True,
-        related_name="Drivers"
+        related_name="Drivers_Cars"
     )
 
     def __str__(self):
