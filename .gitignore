@@ -6,4 +6,4 @@ sqlite3
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
+*.pyd__pycache__/
