@@ -1,4 +1,4 @@
-venv
-pycache
+/venv/
+__pycache__/
 .idea
-sqlite3
+.sqlite3
