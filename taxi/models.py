@@ -4,14 +4,9 @@ from django.db import models
 from taxi_service import settings
 
 
-# Create your models here.
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
-
-    class Meta:
-        verbose_name = "manufacturer"
-        verbose_name_plural = "manufacturers"
 
     def __str__(self):
         return self.name
@@ -19,10 +14,6 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
-
-    class Meta:
-        verbose_name = "driver"
-        verbose_name_plural = "drivers"
 
     def __str__(self):
         return self.username
@@ -33,11 +24,5 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     driver = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
 
-    class Meta:
-        verbose_name = "car"
-        verbose_name_plural = "cars"
-
     def __str__(self):
         return self.model
-
-

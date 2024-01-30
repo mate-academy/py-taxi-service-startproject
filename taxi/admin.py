@@ -32,7 +32,6 @@ class DriverAdmin(UserAdmin):
     )
 
 
-admin.site.register(Manufacturer)
-
-
-# Register your models here.
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    pass
