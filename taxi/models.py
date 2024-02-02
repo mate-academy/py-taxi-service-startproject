@@ -12,6 +12,9 @@ class Manufacturer(models.Model):
             UniqueConstraint(fields=["name"], name="unique_name")
         ]
 
+    def __str__(self) -> str:
+        return f"{self.name}"
+
 
 class Car(models.Model):
     model = models.CharField(max_length=63)

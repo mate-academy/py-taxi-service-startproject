@@ -17,8 +17,12 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
+    list_display = ["model", "manufacturer", "drivers_list"]
     search_fields = ["model"]
     list_filter = ["manufacturer"]
+
+    def drivers_list(self, obj) -> str:
+        return ", ".join([driver.username for driver in obj.drivers.all()])
 
 
 admin.site.register(Manufacturer)
