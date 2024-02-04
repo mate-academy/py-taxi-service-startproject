@@ -1,1 +1,4 @@
-п
+venv/
+idea/
+db.sqlite3
+pyc
