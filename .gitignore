@@ -1,5 +1,7 @@
 *.pyc
 *.pyo
+*.log
+*.pot
 .pytest_cache/
 **__pycache__/
 venv/
@@ -15,3 +17,7 @@ __pycache__/
 /httpRequests/
 /dataSources/
 /dataSources.local.xml
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
