@@ -1,0 +1,9 @@
+__pycache__/
+*.idea
+*.pyc
+.env
+venv
+.vscode/
+*.sublime-*
+.DC_Store
+*.sqlite3
