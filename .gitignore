@@ -10,4 +10,4 @@
 /.idea/
 db.sqlite3
 pycpip install flake8
-/venv/
+/venv
