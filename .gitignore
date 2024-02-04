@@ -4,7 +4,12 @@
 **__pycache__/
 venv/
 .venv
-.idea/
+/.idea/
 __pycache__/
-sqlite3
+*.sqlite3
 *.pyd__pycache__/
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
