@@ -1,4 +1,5 @@
-.idea/
 venv/
+.idea/
+.DS_STORE
 db.sqlite3
 "pyc"
