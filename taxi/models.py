@@ -1,3 +1,5 @@
+from typing import Tuple, Set, Any
+
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.db.models import CharField
@@ -18,7 +20,7 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
 
-    def __str__(self):
+    def __str__(self) -> tuple[set[Any], set[CharField]]:
         return {self.manufacturer.name}, {self.model}
 
 
