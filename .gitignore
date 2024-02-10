@@ -1,0 +1,4 @@
+py-taxi-service-startproject/
+.idea/
+pycache/
+db.sqlite3
