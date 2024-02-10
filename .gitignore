@@ -3,3 +3,4 @@ venv/
 .DS_STORE
 db.sqlite3
 "pyc"
+pycache
