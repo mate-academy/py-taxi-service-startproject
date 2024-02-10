@@ -1,8 +1,5 @@
-from typing import Tuple, Set, Any
-
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.db.models import CharField
 
 from taxi_service import settings
 
@@ -11,7 +8,7 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=254, unique=True)
     country = models.CharField(max_length=20)
 
-    def __str__(self) -> CharField:
+    def __str__(self) -> str:
         return self.name
 
 
@@ -20,7 +17,7 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
 
-    def __str__(self) -> tuple[set[Any], set[CharField]]:
+    def __str__(self) -> str:
         return {self.manufacturer.name}, {self.model}
 
 
