@@ -1,0 +1,7 @@
+venv/
+.idea/
+.DS_STORE
+db.sqlite3
+"pyc"
+__pycache__
+.Ds_Store
