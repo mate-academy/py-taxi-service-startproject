@@ -1,0 +1,21 @@
+# Ignore compiled Python files
+import env as env
+import pyc as pyc
+from django.contrib import staticfiles
+from django.template.context_processors import media
+*.pyc
+
+# Ignore SQLite database files
+db.sqlite3
+
+# Ignore environment variable files
+.env
+
+# Ignore user-uploaded files
+media/
+
+# Ignore static files collected by Django's 'collectstatic' command
+staticfiles/
+
+# IntelliJ IDEA
+.idea/
