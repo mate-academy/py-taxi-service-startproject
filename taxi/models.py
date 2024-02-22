@@ -21,5 +21,5 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.TextField(unique=True)
-    password = models.TextField()
+
 
