@@ -10,10 +10,6 @@ class Manufacturer(models.Model):
     def __str__(self) -> str:
         return f"{self.name} ({self.country})"
 
-    class Meta:
-        verbose_name = "manufacturer"
-        verbose_name_plural = "manufacturers"
-
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
@@ -27,10 +23,6 @@ class Car(models.Model):
         related_name="cars"
     )
 
-    class Meta:
-        verbose_name = "car"
-        verbose_name_plural = "cars"
-
     def __str__(self) -> str:
         return f"{self.model} ({self.manufacturer})"
 
@@ -40,7 +32,3 @@ class Driver(AbstractUser):
 
     def __str__(self) -> str:
         return f"{self.username}: {self.first_name} {self.last_name}"
-
-    class Meta:
-        verbose_name = "driver"
-        verbose_name_plural = "drivers"
