@@ -19,8 +19,7 @@ class Driver(AbstractUser):
     last_name = models.CharField(max_length=63)
 
     class Meta:
-        def __str__(self):
-            return "Drivers"
+        verbose_name = "Driver"
 
 
 class Car(models.Model):
