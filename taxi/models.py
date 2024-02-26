@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -12,11 +13,6 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
-    username = models.CharField(max_length=63, unique=True)
-    email = models.EmailField()
-    password = models.CharField(max_length=25)
-    first_name = models.CharField(max_length=63)
-    last_name = models.CharField(max_length=63)
 
     class Meta:
         verbose_name = "Driver"
@@ -24,8 +20,11 @@ class Driver(AbstractUser):
 
 class Car(models.Model):
     model = models.CharField(max_length=63)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
-    driver = models.ManyToManyField(Driver, related_name="Cars")
+    manufacturer = models.ForeignKey(Manufacturer,
+                                     on_delete=models.CASCADE,
+                                     related_name="cars")
+    driver = models.ManyToManyField(settings.AUTH_USER_MODEL,
+                                    related_name="Cars")
 
     def __str__(self):
         return f"{self.manufacturer} {self.model}"
