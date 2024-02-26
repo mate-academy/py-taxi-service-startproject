@@ -7,9 +7,6 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=66, unique=True)
     country = models.CharField(max_length=20)
 
-    class Meta:
-        verbose_name = "manufacturer"
-
     def __str__(self):
         return self.name
 
@@ -22,12 +19,6 @@ class Car(models.Model):
         related_name="cars"
     )
 
-    class Meta:
-        verbose_name = "car"
-
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=66, unique=True)
-
-    class Meta:
-        verbose_name = "driver"
