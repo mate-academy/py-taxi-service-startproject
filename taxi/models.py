@@ -14,9 +14,6 @@ class Manufacturer(models.Model):
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
-    class Meta:
-        verbose_name = "Driver"
-
 
 class Car(models.Model):
     model = models.CharField(max_length=63)
@@ -24,7 +21,7 @@ class Car(models.Model):
                                      on_delete=models.CASCADE,
                                      related_name="cars")
     driver = models.ManyToManyField(settings.AUTH_USER_MODEL,
-                                    related_name="Cars")
+                                    related_name="cars")
 
     def __str__(self):
         return f"{self.manufacturer} {self.model}"
