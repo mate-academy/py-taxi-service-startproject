@@ -1,4 +1,4 @@
-# Сheck Your Code Against the Following Points
+git# Сheck Your Code Against the Following Points
 
 ## Don't forget to add `.gitignore` file BEFORE pushing
 Make sure you don't push db files (files with `.sqlite`, `.db3`, etc. extension).
