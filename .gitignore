@@ -1,5 +1,7 @@
 db.sqlite3
 
-tests/__pycache__/
+__pycache__
 
-vevn/
+vevn
+
+.idea
