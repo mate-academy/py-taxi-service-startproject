@@ -6,7 +6,7 @@ from taxi.models import Driver, Manufacturer, Car
 
 @admin.register(Manufacturer)
 class ManufacturerAdmin(admin.ModelAdmin):
-    list_display = ("name", "country")
+    list_display = ("name", "country", )
 
 
 @admin.register(Car)

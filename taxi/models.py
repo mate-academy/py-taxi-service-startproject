@@ -8,7 +8,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=63)
 
     class Meta:
-        ordering = ("name",)
+        ordering = ("name", )
 
     def __str__(self) -> str:
         return self.name
@@ -25,7 +25,7 @@ class Car(models.Model):
         related_name="cars")
 
     class Meta:
-        ordering = ("model",)
+        ordering = ("model", )
 
     def __str__(self) -> str:
         return f"{self.manufacturer} {self.model}"
@@ -35,7 +35,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
     class Meta:
-        ordering = ("username",)
+        ordering = ("username", )
 
     def __str__(self) -> str:
         return f"{self.username}: ({self.first_name} {self.last_name})"
