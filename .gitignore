@@ -9,3 +9,4 @@ venv/
 *.pyc
 **db.sqlite3
 *.md
+.idea
