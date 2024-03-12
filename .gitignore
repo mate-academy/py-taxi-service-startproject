@@ -1,0 +1,10 @@
+### Django ###
+*.pyc
+.idea
+
+# DB
+.sqlite3
+
+# Environments
+
+.venv
