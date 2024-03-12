@@ -17,8 +17,8 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    search_fields = ["model",]
-    list_filter = ["manufacturer", ]
+    search_fields = ["model"]
+    list_filter = ["manufacturer__name"]
 
 
 admin.site.register(Manufacturer)
