@@ -21,6 +21,10 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars"
     )
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="cars"
+    )
 
     class Meta:
         ordering = ("model", )
@@ -31,10 +35,6 @@ class Car(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
-    car = models.ManyToManyField(
-        settings.AUTH_USER_MODEL,
-        related_name="drivers"
-    )
 
     class Meta:
         ordering = ("username", )
