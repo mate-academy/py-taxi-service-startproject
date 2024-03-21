@@ -10,8 +10,9 @@ class CarAdmin(admin.ModelAdmin):
     search_fields = ["model", ]
     list_display = ["model", "manufacturer", ]
 
-
-admin.site.register(Manufacturer)
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(Driver)

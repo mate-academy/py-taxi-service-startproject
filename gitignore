@@ -1,6 +1,0 @@
-.idea/
-venv/
-.pytest_cache/
-pycache/
-*.pyc
-db.sqlite3
