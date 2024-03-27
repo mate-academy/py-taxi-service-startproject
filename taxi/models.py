@@ -12,7 +12,10 @@ class Manufacturer(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=37, unique=True, null=True, blank=True)
+    license_number = models.CharField(
+        max_length=37,
+        unique=True
+    )
 
 
 class Car(models.Model):
@@ -25,4 +28,4 @@ class Car(models.Model):
     drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
     def __str__(self) -> str:
-        return f"{self.model}, {self.manufacturer}, {self.drivers}"
+        return f"{self.model}, {self.manufacturer}"
