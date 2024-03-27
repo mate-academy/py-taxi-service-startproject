@@ -3,6 +3,7 @@ venv/
 
 # ignore ALL files in ANY directory named pycesh
 __pycache__/
+
 # ignore ALL .idea files
 *.idea
 
