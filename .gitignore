@@ -1,0 +1,11 @@
+# ignore ALL files in ANY directory named venv
+venv/
+
+# ignore ALL files in ANY directory named pycesh
+__pycache__/
+
+# ignore ALL .idea files
+*.idea
+
+# ignore database file
+db.sqlite3
