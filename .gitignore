@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches
+.cache/
+.cached_data/
+
+# Virtual Environment
+venv/
+env/
+*.env/
+
+# Logs and databases
+*.log
+*.sqlite3
+db.sqlite3
+
+# PyCharm files
+.idea/
+
+# Django-specific
+*.db
