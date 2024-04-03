@@ -1,0 +1,8 @@
+pycache
+/.idea/
+sqlite3
+db.sqlite3
+/venv/
+/taxi/__pycache__/
+/taxi_service/__pycache__/
+/tests/__pycache__/
