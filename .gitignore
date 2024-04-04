@@ -8,6 +8,7 @@ db.sqlite3
 db.sqlite3-journal
 media
 
+.idea
 
 # Environments
 .env
