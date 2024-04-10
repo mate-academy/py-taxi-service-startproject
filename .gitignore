@@ -1,0 +1,7 @@
+venv/
+db.sqlite3
+.idea/
+# First attempt
+# pyc
+# Second attempt, but test_taxi also falled
+__pycache__/
