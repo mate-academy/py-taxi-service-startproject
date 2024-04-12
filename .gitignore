@@ -1,0 +1,7 @@
+.idea
+.venv
+db.sqlite3
+__pychache__
+taxi_service/__pycache__/
+
+
