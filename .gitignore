@@ -1,0 +1,19 @@
+# .gitignore
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.sqlite3
+.venv/
+venv/
+ENV/
+*.log
+.idea/
+*.swp
+*~
