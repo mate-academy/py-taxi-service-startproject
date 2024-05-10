@@ -1,0 +1,11 @@
+.idea /
+.vscode /
+* .iml
+* .pyc
+** db.sqlite3sqlite3
+.env
+.DS_StoreDS_Store
+venv /
+.pytest_cachepytest_cache /
+.idea
+__pycache__
