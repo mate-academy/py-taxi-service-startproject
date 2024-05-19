@@ -1,0 +1,6 @@
+/db.sqlite3
+/venv/
+/tests/
+/.github/
+/.idea
+/pyc
