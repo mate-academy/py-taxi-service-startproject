@@ -1,0 +1,50 @@
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+*.log
+*.pot
+*.pyc
+*.mo
+*.pyo
+*.pyd
+*.sql
+*.sqlite3
+
+# VSCode files
+.vscode/
+.idea/
+
+# PyCharm project files
+*.iml
+*.ipr
+*.iws
+
+# Django static and media files
+staticfiles/
+media/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+
+# Environments
+.env
+.venv
+env/
+ENV/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
