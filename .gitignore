@@ -1,7 +1,5 @@
-.gitignore
+venv/
 *.pyc
 __pycache__/
-.env
-.DS_Store
+db.sqlite3
 .idea/
-*.sqlite3
