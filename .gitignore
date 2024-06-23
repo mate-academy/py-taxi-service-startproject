@@ -1,0 +1,14 @@
+*.pyc
+__pycache__/
+
+*.sqlite3
+*.pyo
+*.pyd
+*.log
+*.swp
+
+.idea/
+.vscode/
+*.iml
+
+venv/
