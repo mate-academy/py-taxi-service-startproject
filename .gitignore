@@ -1,0 +1,5 @@
+venv
+pycashe
+.idea
+db.sqlite3
+etc
