@@ -1,0 +1,5 @@
+.github
+.idea
+venv
+db.sqlite3
+pycache
