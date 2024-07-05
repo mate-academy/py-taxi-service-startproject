@@ -1,5 +1,8 @@
-venv/
-**db.sqlite3
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
 .idea/
-.pytest_cache/
-**__pycache__/
+venv/'.idea' 
