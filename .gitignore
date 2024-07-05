@@ -1,0 +1,5 @@
+.idea
+.github
+.sqlite3
+.venv
+.pyc
