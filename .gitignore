@@ -1,4 +1,6 @@
 venv
-pycache
 .idea
 .sqlite3
+*/__pycache__/
+taxi/migrations/__pycache__/
+
