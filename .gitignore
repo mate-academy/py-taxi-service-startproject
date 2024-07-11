@@ -1,0 +1,20 @@
+# Virtual Environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# IDE specific files
+.idea/
+
+# Temporary files
+*.swp
+*~
+
+# Configuration files
+.env
+.env.local
+.env.*
+
+sqlite3
