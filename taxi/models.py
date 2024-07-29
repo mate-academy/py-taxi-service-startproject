@@ -11,11 +11,6 @@ class Manufacturer(models.Model):
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=50, unique=True)
-    username = models.CharField(max_length=50, unique=True)
-    email = models.EmailField()
-    password = models.CharField(max_length=50)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
 
 
 class Car(models.Model):
