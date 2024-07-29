@@ -22,13 +22,9 @@ py-taxi-service-startproject
 |-> manage.py
 |-> README.md
 |-> taxi_service
-    |-> __init__.py
+    |-> __inidt__.py
     |-> settings.py
     ...
-```
-3. Inside `py-taxi-service-startproject` start application `taxi`:
-```python
-python manage.py startapp taxi
 ```
 
 4. Inside `taxi/models.py` create models according to this diagram:
