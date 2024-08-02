@@ -1,0 +1,14 @@
+# Віртуальне середовище
+venv/
+
+*.sqlite3
+
+.env
+
+__pycache__/
+*.py[cod]
+
+.idea/
+.vscode/
+
+
