@@ -1,0 +1,26 @@
+# Віртуальне середовище
+venv/
+
+*.sqlite3
+
+.env
+
+__pycache__/
+*.py[cod]
+
+.idea/
+.vscode/
+
+
+Thumbs.db
+/taxi/views.py
+/taxi/migrations/__init__.py
+/taxi/__init__.py
+/taxi_service/asgi.py
+/taxi/apps.py
+/taxi_service/__init__.py
+/taxi_service/urls.py
+/manage.py
+/taxi/tests.py
+/taxi_service/wsgi.py
+/taxi/migrations/0001_initial.py
