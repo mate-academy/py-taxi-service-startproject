@@ -20,7 +20,6 @@ Thumbs.db
 /taxi/apps.py
 /taxi_service/__init__.py
 /taxi_service/urls.py
-/manage.py
 /taxi/tests.py
 /taxi_service/wsgi.py
 /taxi/migrations/0001_initial.py
