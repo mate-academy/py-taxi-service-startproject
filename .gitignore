@@ -1,0 +1,5 @@
+venv
+pycache
+.idea
+sqlite3
+pyc
