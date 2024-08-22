@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+.idea/
+*.sqlite3
+taxi/migrations/0001_initial.py
