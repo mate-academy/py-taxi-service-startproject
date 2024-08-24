@@ -1,0 +1,15 @@
+venv
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+.env
+*.env
+*.log
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+/staticfiles/
+static/
