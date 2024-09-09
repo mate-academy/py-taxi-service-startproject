@@ -1,0 +1,37 @@
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+*.env
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# JetBrains
+*.iml
+out/
