@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+ENV/
+.env/
+.venv/
+env/
+venv.bak/
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+
+# IDEs
+.idea/
+.vscode/
+
+# Others
+.DS_Store
