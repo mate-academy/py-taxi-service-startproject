@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environments
+venv/
+.env/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Logs and local files
+*.log
+*.sqlite3
+
+# Django stuff:
+db.sqlite3
+media/
+staticfiles/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
