@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+venv/
+db.sqlite3
+__pycache__/
+__init__.py
