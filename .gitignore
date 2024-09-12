@@ -1,0 +1,8 @@
+.idea
+.vscode
+dif
+venv
+**.рус
+**__pycache__/
+taxi/migrations/__pycache__/
+db.sqlite3
