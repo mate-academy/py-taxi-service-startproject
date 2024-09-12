@@ -1,0 +1,8 @@
+/db.sqlite3
+/.github/
+.idea
+README.md
+checklist.md
+.sqlite
+.db3
+*.pyc
