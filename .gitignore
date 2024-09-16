@@ -1,0 +1,5 @@
+*.sqlite3
+*.cache
+*.db
+.idea/
+*.pyc
