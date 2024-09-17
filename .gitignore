@@ -1,0 +1,10 @@
+/db.sqlite3
+/venv/
+.idea/
+/inspectionProfiles
+*.pyc
+.pytest_cache/
+**__pycache__/
+taxi/__pycache__/
+taxi/migrations/__pycache__/
+taxi_service/__pycache__/
