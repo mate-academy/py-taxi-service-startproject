@@ -1,0 +1,35 @@
+# Virtual environment
+venv/
+
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment variables
+.env
+
+# Database files
+db.sqlite3
+*.sqlite3
+
+
+# Static and media files
+/static/
+/media/
+
+# Logs
+*.log
+
+# IDE/editor specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Packaging
+/build/
+/dist/
+/*.egg-info/
