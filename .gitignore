@@ -1,0 +1,9 @@
+## My Ignore Files
+.idea
+*.sqlite3
+*.jpg
+command.txt
+
+# Python Tools
+__pycache__/
+*.pyc
