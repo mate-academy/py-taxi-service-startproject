@@ -1,3 +1,6 @@
+import os
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "taxi_service.settings")
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
