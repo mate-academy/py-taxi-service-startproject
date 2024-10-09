@@ -1,0 +1,24 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore IDE configuration files (e.g., PyCharm)
+.idea/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore environment variable files
+.env
+
+# Ignore logs and other development artifacts
+*.log
+*.sqlite3
+*.bak
