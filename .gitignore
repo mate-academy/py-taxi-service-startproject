@@ -1,0 +1,20 @@
+# Ignore database files
+db.sqlite3
+*.sqlite3
+
+# Ignore the virtual environment
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+
+
+
+# IDE specific files
+.idea/
+
+# Logs
+*.log

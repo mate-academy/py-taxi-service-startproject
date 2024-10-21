@@ -1,0 +1,23 @@
+# Ignore the virtual environment
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Django migrations
+**/migrations/
+
+# IDE specific files
+.idea/
+
+# SQLite database
+db.sqlite3
+
+# Logs
+*.log
+
+# Other unneeded files
+*.env
+*.DS_Store
