@@ -1,0 +1,31 @@
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+db.sqlite3
+
+# virtualenv
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# ОС специфічне
+.DS_Store
+Thumbs.db
