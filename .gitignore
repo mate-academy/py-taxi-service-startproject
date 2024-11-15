@@ -1,0 +1,4 @@
+# created by virtualenv automatically
+.idea
+db.sqlite3
+pyc
