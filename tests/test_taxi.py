@@ -12,9 +12,7 @@ class AdminSiteDriverTests(TestCase):
         )
         self.client.force_login(self.admin_user)
         self.driver = get_user_model().objects.create_user(
-            username="test.user",
-            password="2wsxvfr4",
-            license_number="TES12345"
+            username="test.user", password="2wsxvfr4", license_number="TES12345"
         )
 
     def test_license_number_in_driver_changelist(self):
