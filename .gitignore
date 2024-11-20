@@ -1,0 +1,10 @@
+db.sqlite3
+venv
+README.md
+.idea
+__pycache__
+taxi/__pycache__
+taxi/migrations/__pycache__
+taxi_service/__init__.py
+taxi_service/__pycache__/
+taxi_service/__init__.py
