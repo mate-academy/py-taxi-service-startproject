@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car List</title>
+</head>
+<body>
+    <h1>Available Cars</h1>
+    <ul>
+        {% for car in cars %}
+            <li>{{ car.model }} - {{ car.manufacturer.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

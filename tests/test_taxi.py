@@ -3,6 +3,8 @@ from django.test import TestCase
 from django.urls import reverse
 import os.path
 
+from taxi.models import Manufacturer, Car, Driver
+
 
 class AdminSiteDriverTests(TestCase):
     def setUp(self) -> None:
@@ -79,3 +81,21 @@ class GitignoreTests(TestCase):
             assert "idea" in gitignore_content
             assert "sqlite3" in gitignore_content
             assert "pyc" in gitignore_content
+class ManufacturerModelTest(TestCase):
+    def test_create_manufacturer(self):
+        manufacturer = Manufacturer.objects.create(name="Toyota", country="Japan")
+        self.assertEqual(manufacturer.name, "Toyota")
+        self.assertEqual(manufacturer.country, "Japan")
+
+class CarModelTest(TestCase):
+    def test_create_car(self):
+        manufacturer = Manufacturer.objects.create(name="Toyota", country="Japan")
+        car = Car.objects.create(model="Corolla", manufacturer=manufacturer)
+        self.assertEqual(car.model, "Corolla")
+        self.assertEqual(car.manufacturer.name, "Toyota")
+
+class DriverModelTest(TestCase):
+    def test_create_driver(self):
+        driver = Driver.objects.create_user(username="testdriver", password="password123", license_number="ABC123")
+        self.assertEqual(driver.username, "testdriver")
+        self.assertEqual(driver.license_number, "ABC123")
