@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: blank
+Version: 0.1.0
+Summary: A blank / template for creating a new Python package
+Home-page: https://github.com/minhng-info/blank
+Author: minhng-info
+Author-email: minhng92@gmail.com
+Maintainer: minhng-info
+Maintainer-email: minhng92@gmail.com
+License: MIT
+Download-URL: https://github.com/minhng-info/blank/tarball/master
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4,
+Description-Content-Type: text/markdown
+
+# python-blank
+A blank / template for creating a new Python package
+
+# Installation
+
+```
+$ pip install blank
+```
+
+# Usage
+
+## CLI
+
+```
+$ hello_blank
+Welcome to Blank package!
+```
+
+## Package
+
+``` python
+import blank
+
+print(blank.reverse("minhng.info")) # "ofni.gnhnim"
+```
+
+

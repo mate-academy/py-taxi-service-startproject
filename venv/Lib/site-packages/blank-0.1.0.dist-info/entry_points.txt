@@ -1,0 +1,3 @@
+[console_scripts]
+hello_blank = blank.main:say_hello
+
