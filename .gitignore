@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# Django
+*.sqlite3
+db.sqlite3
+media/
+
+# Virtual Environment
+venv/
+.venv/
+
+# IDEs and editors
+.idea/   # для PyCharm
+.vscode/
+
+# macOS
+.DS_Store
