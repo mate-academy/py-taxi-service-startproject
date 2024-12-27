@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+.github
+tests
+venv
+checklist.md
+README.md
+.idea
