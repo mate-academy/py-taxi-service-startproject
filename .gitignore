@@ -1,0 +1,24 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+*.log
+*.pot
+*.mo
+
+# Django specific
+
+db.sqlite3
+
+# Virtual environment
+venv/
+.env
+
+# IDE specific
+.idea/
+.vscode/
+
+# Mac specific
+.DS_Store
