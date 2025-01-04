@@ -1,0 +1,18 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+.env
+
+# Ignore database files
+db.sqlite3
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
