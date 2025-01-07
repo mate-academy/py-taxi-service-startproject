@@ -1,0 +1,44 @@
+# Python-specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+*.env
+
+# IDE/Editor-specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Django-specific
+db.sqlite3
+*.log
+/static/
+media/
+
+# Node.js (if using for frontend)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Coverage reports
+coverage/
+*.cover
+.hypothesis/
+.tox/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
