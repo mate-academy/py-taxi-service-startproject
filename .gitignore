@@ -1,0 +1,21 @@
+# Виртуальное окружение
+venv/
+
+# Кэш-компиляция Python
+__pycache__/
+*.pyc
+
+# Логи
+*.log
+
+# Файлы IDE (PyCharm, VSCode и т. д.)
+.idea/
+
+# База данных SQLite
+*.sqlite3
+
+# Конфигурационные файлы ОС
+.DS_Store
+
+.env
+
