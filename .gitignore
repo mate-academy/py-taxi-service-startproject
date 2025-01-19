@@ -1,0 +1,6 @@
+pycache
+.idea
+/db.sqlite3
+/venv/
+__pycache__
+screenshorts
