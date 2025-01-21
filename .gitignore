@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+.idea/
+*.log
+*.sqlite3
+key.py
