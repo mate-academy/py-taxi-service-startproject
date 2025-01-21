@@ -1,0 +1,19 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.idea
+
+# Virtual environment
+env/
+venv/
+
+# Logs and debug files
+*.log
+*.sqlite3
+
+# Django-related
+*.pyc
+db.sqlite3
+/static/
+media/
