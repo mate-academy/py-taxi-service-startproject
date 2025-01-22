@@ -10,6 +10,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     search_fields = ("model",)
+    list_filter = ('manufacturer',)
 
 
 @admin.register(Driver)
