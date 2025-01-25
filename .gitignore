@@ -1,0 +1,66 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.out
+*.err
+
+# Environment variables
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python eggs and caches
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Build and distribution directories
+build/
+dist/
+*.wheel
+
+# Test coverage reports
+htmlcov/
+*.coverage
+.coverage.*
+.cache/
+
+# Mypy type checking cache
+.mypy_cache/
+
+# PyInstaller
+*.spec
+
+# Profiling data
+*.prof
+
+# pipenv
+Pipfile.lock
+
+# Coverage and lint reports
+coverage.xml
+*.lint
+
+# SQLite database files
+*.sqlite3
+*.db
