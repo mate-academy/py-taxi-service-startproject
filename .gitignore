@@ -1,0 +1,31 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore environment files
+.env
+.venv/
+venv/
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Ignore Django migration cache files
+db.sqlite3
+*.log
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore unnecessary folders
+node_modules/
+staticfiles/
+media/
