@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-9iihe#9=6d!0&2#g@o4jsf2og*1rn)es!2a4obmnged34@geiw"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "taxI_service.urls"
+ROOT_URLCONF = "taxi_service.urls"
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "taxI_service.wsgi.application"
+WSGI_APPLICATION = "taxi_service.wsgi.application"
 
 
 # Database
