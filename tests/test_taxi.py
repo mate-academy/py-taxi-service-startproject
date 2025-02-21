@@ -67,15 +67,19 @@ class AdminSiteCarTests(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
+def test_gitignore_has_correct_content():
+    with open(".gitignore", "r") as gitignore:
+        gitignore_content = gitignore.read()
+
+        assert "idea" in gitignore_content
+        assert "sqlite3" in gitignore_content
+        assert "pyc" in gitignore_content
+
+
+def test_gitignore_exist():
+    file_exists = os.path.exists('.gitignore')
+    assert file_exists
+
+
 class GitignoreTests(TestCase):
-    def test_gitignore_exist(self):
-        file_exists = os.path.exists('.gitignore')
-        assert file_exists
-
-    def test_gitignore_has_correct_content(self):
-        with open(".gitignore", "r") as gitignore:
-            gitignore_content = gitignore.read()
-
-            assert "idea" in gitignore_content
-            assert "sqlite3" in gitignore_content
-            assert "pyc" in gitignore_content
+    pass
