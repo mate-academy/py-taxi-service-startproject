@@ -31,7 +31,10 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         Manufacturer, on_delete=models.CASCADE, verbose_name="cars"
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, verbose_name="cars")
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        verbose_name="cars"
+    )
 
     def __str__(self):
         return self.model
