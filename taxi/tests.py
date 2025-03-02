@@ -23,5 +23,5 @@ class DriverModelTest(TestCase):
         User = get_user_model()
         driver = User.objects.create_user(username="driver1", password="password", license_number="12345qwerty")
         self.assertEqual(driver.username, "driver1")
-        self.assertEqual(driver.password, "password")
+        self.assertTrue(driver.check_password("password"))
         self.assertEqual(driver.license_number, "12345qwerty")
