@@ -1,0 +1,11 @@
+# Django related
+db.sqlite3
+*.sqlite3
+
+# virtual env
+venv/
+pycache
+.idea
+
+# Compile
+__pycache__
