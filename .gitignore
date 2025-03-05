@@ -1,0 +1,5 @@
+.idea/
+db.sqlite3
+taxi/
+taxi_service/
+tests/__pycache__/
