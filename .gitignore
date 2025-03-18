@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+venv/
+.env/
+ENV/
+env/
+
+# Django stuff
+db.sqlite3
+media/
+staticfiles/
+*.sqlite3
+*.db
+
+# Secrets
+*.env
+.env.*
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# Migrations (опційно, якщо генеруєш вручну)
+# */migrations/
+# !*/migrations/__init__.py
+
+# Pycharm
+*.iml
