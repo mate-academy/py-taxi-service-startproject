@@ -1,0 +1,62 @@
+[
+  {
+    "username": "boconnor",
+    "first_name": "Brian",
+    "last_name": "O'Conner",
+    "license_number": "BOC-3592"
+  },
+  {
+    "username": "domt",
+    "first_name": "Dominic",
+    "last_name": "Toretto",
+    "license_number": "DOM-4821"
+  },
+  {
+    "username": "lettyo",
+    "first_name": "Letty",
+    "last_name": "Ortiz",
+    "license_number": "LET-2451"
+  },
+  {
+    "username": "rpearce",
+    "first_name": "Roman",
+    "last_name": "Pearce",
+    "license_number": "RPE-7319"
+  },
+  {
+    "username": "tejparker",
+    "first_name": "Tej",
+    "last_name": "Parker",
+    "license_number": "TEJ-5476"
+  },
+  {
+    "username": "hanlue",
+    "first_name": "Han",
+    "last_name": "Lue",
+    "license_number": "HAN-8425"
+  },
+  {
+    "username": "hobbs",
+    "first_name": "Luke",
+    "last_name": "Hobbs",
+    "license_number": "HOB-8143"
+  },
+  {
+    "username": "giselay",
+    "first_name": "Gisele",
+    "last_name": "Yashar",
+    "license_number": "GIS-2954"
+  },
+  {
+    "username": "vincef",
+    "first_name": "Vince",
+    "last_name": "Ferreira",
+    "license_number": "VIN-6907"
+  },
+  {
+    "username": "seanb",
+    "first_name": "Sean",
+    "last_name": "Boswell",
+    "license_number": "SEA-1234"
+  }
+]
