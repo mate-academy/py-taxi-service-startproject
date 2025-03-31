@@ -18,7 +18,7 @@ class Driver(AbstractUser):
         verbose_name = "driver"
 
     def __str__(self):
-        return self.license_number
+        return f"{self.username} ({self.license_number})"
 
 
 class Car(models.Model):
