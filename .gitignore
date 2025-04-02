@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# JetBrains IDE settings
+.idea/
+
+# SQLite database
+db.sqlite3
