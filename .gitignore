@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+
+#Pycharm IDE
+.idea
+__pycache__
+*.sqlite3
+
