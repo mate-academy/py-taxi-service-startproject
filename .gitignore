@@ -1,0 +1,8 @@
+.github
+.venv
+__pycache__
+.idea
+.idea/
+idea
+db.sqlite3
+*.pyc
