@@ -1,0 +1,6 @@
+venv
+/staticfiles/
+/mediafiles/
+.idea/
+db.sqlite3
+pyc
