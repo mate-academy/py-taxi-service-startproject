@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    migrations,
+    venv,
+    *.pyc,
+    __pycache__,
