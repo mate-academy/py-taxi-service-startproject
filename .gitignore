@@ -1,0 +1,31 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.egg-info/
+*.env
+*.venv
+*.virtualenv
+*.env.*
+venv/
+env/
+.venv/
+
+# Django
+db.sqlite3
+media/
+*.log
+*.pot
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
