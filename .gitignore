@@ -1,0 +1,36 @@
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore SQLite database files
+*.sqlite3
+
+# Ignore Python cache files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore Django migrations (optional)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# Uncomment the next line if you want to ignore all migration files (not always recommended)
+# **/migrations/*.py
+
+# Ignore environment files
+*.env
+.env.*
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore log files
+*.log
+
+# Ignore VSCode settings (optional)
+.vscode/
