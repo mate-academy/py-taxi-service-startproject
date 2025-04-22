@@ -1,0 +1,35 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment directory (adjust the name if your virtualenv is named differently)
+venv/
+env/
+ENV/
+*.env
+
+# Django specific
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Media files (for user-uploaded content)
+media/
+
+# Static files (if you're not using a CDN)
+static/
+
+# IDE/editor specific files (e.g., PyCharm, VSCode)
+.idea/
+.vscode/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Local environment settings (add if you have any local settings file)
+*.local
