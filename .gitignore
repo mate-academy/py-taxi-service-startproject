@@ -1,0 +1,7 @@
+.venv
+.github
+idea
+*.sqlite3
+*.pyc
+pycache
+.idea
