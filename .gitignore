@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+static/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Migrations
+**/migrations/
+**/migrations/*.py
+**/migrations/*.pyc
+
+# dotenv
+.env
+
+# System files
+.DS_Store
+Thumbs.db
