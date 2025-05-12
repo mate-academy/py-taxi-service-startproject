@@ -1,0 +1,22 @@
+﻿# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+idea
