@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taxi Service Tables</title>
+</head>
+<body>
+    <h1>Taxi Service Tables</h1>
+    <h2>Drivers</h2>
+    <ul>
+    {% for driver in drivers %}
+        <li>{{ driver.username }} - License: {{ driver.license_number }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Cars</h2>
+    <ul>
+    {% for car in cars %}
+        <li>{{ car.model }} - Manufacturer: {{ car.manufacturer.name }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Manufacturers</h2>
+    <ul>
+    {% for manufacturer in manufacturers %}
+        <li>{{ manufacturer.name }} ({{ manufacturer.country }})</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
