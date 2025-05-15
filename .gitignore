@@ -1,0 +1,38 @@
+# Віртуальне середовище
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Python кеші
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Бази даних SQLite
+*.sqlite3
+
+# Файли журналів
+*.log
+
+# Секрети
+.env
+.env.*
+
+# Файли міграцій кешу
+*.pyc
+
+# Django static/media (якщо не у сховищі)
+staticfiles/
+media/
+
+# Тестові результати
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# Інше
+.DS_Store
+Thumbs.db
