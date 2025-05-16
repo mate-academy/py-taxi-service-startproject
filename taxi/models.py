@@ -9,6 +9,7 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=255)
     county = models.CharField(max_length=255)
 
+
     class Meta:
         constraints = [
             UniqueConstraint(fields=("name",), name="unique_manufacturer_name"),
@@ -21,6 +22,7 @@ class Driver(AbstractUser):
         constraints = [
             UniqueConstraint(fields=("license_number",), name="unique_license_number"),
         ]
+
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
