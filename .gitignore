@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+venv/
+ENV/
+*.sqlite3
+*.log
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Migrations
+# Track migrations — do NOT ignore them in team projects or production
+# If you're solo and auto-generate, uncomment below to ignore:
+# */migrations/*.py
+# */migrations/*.pyc
+# !*/migrations/__init__.py
+
+# Secrets
+.env
+secrets.json
+
+# Coverage/testing
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Render or deployment-related
+*.render/
