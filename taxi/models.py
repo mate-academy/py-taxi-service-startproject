@@ -17,7 +17,7 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=63, unique=True)
 
     def __str__(self) -> str:
-        return f"{self.username} ({self.first_name} {self.last_name}) -> {self.license_number}"
+        return f"{self.username} ({self.first_name} {self.last_name})"
 
     class Meta:
         ordering = ("username",)
