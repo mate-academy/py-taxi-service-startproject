@@ -3,12 +3,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.pyc
-*.pyo
-*.pyd
-*.env
-*.venv
-.env/
+.env
 .venv/
 env/
 venv/
@@ -31,8 +26,9 @@ local_settings.py
 # PyCharm
 .idea/
 
-# Migrations (optional: only if you auto-generate and don't want to track them)
-# ** Don't ignore if you're collaborating and want to track migration history
+# Migrations
+# Track migrations — do NOT ignore them in team projects or production
+# If you're solo and auto-generate, uncomment below to ignore:
 # */migrations/*.py
 # */migrations/*.pyc
 # !*/migrations/__init__.py
