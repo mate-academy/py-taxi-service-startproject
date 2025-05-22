@@ -1,0 +1,33 @@
+ECHO is on.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/ # Це дуже важливо! Ігнорує папку віртуального середовища
+.venv/ # Якщо ваше віртуальне середовище називається .venv
+
+# Django-специфічні файли
+*.log
+*.sqlite3 # Ваша база даних SQLite
+db.sqlite3 # Якщо ваша база даних називається db.sqlite3
+media/ # Папка для завантажених файлів (зазвичай не відстежується)
+static/ # Папка для збору статичних файлів (якщо використовується collectstatic)
+
+# IDE-специфічні файли (наприклад, для PyCharm, VS Code)
+.idea/ # Для PyCharm
+.vscode/ # Для VS Code
+*.iml
+*.ipr
+*.iws
+
+# Операційна система
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Загальні тимчасові файли
+*.tmp
+*.bak
