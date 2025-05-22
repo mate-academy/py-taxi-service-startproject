@@ -25,7 +25,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ("manufacturer", "model", "drivers")
+    list_display = ("manufacturer", "model", "display_drivers")
     list_filter = ("manufacturer",)
     search_fields = (
         "model",
@@ -33,3 +33,7 @@ class CarAdmin(admin.ModelAdmin):
         "drivers__username",
         "manufacturer__name",
     )
+
+    def display_drivers(self, obj):
+        return ", ".join([driver.username for driver in obj.drivers.all()])
+    display_drivers.short_description = "Drivers"

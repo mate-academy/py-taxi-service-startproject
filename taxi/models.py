@@ -32,9 +32,8 @@ class Driver(AbstractUser):
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
-    drivers = models.ForeignKey(
+    drivers = models.ManyToManyField(
         Driver,
-        on_delete=models.PROTECT,
         related_name="cars_assign",
         verbose_name="Driver",
     )
