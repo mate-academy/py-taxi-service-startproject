@@ -1,0 +1,30 @@
+ECHO is on.
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+
+*.log
+*.sqlite3
+db.sqlite3
+media/
+static/
+
+.idea/ # Для PyCharm
+.vscode/ # Для VS Code
+*.iml
+*.ipr
+*.iws
+
+.DS_Store # macOS
+Thumbs.db # Windows
+
+
+*.tmp
+*.bak
