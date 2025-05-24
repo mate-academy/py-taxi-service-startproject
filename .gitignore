@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Віртуальне середовище
+venv/
+.venv/
+
+# PyCharm / VS Code
+.idea/
+.vscode/
+
+# Секретні файли
+.env
+*.env
+
+# Системні
+.DS_Store
+Thumbs.db
