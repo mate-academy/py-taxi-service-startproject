@@ -1,0 +1,5 @@
+.venv/
+.sqlite3
+.idea
+.pycache
+.db3
