@@ -1,0 +1,44 @@
+# Віртуальне середовище
+venv/
+ENV/
+env/
+
+# Python-кеші
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Конфігураційні файли IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# База даних SQLite
+*.sqlite3
+
+# Файли логів
+*.log
+
+# Міграції, якщо хочеш їх ігнорувати (опціонально)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Файли системи
+.DS_Store
+Thumbs.db
+
+# Файли Django
+*.pot
+*.pyc
+
+# Користувацькі налаштування
+*.env
+.env.*
+
+# Статичні файли (опціонально, якщо збираються вручну)
+staticfiles/
+static/
+
+# Медіа-файли (якщо завантажуються користувачами)
+media/
