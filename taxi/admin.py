@@ -12,7 +12,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ["model",]
+    list_display = ["model", "manufacturer",]
     search_fields = ["model",]
     list_filter = ["manufacturer",]
 
