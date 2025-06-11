@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+# Virtualenv
+venv/
+
+# Django
+db.sqlite3
+
+# Migrations
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
