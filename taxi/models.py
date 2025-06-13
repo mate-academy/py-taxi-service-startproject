@@ -28,6 +28,3 @@ class Car(models.Model):
         Driver,
         related_name="cars"
     )
-
-    def __str__(self):
-        return
