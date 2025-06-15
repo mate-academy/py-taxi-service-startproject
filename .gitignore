@@ -1,0 +1,16 @@
+.idea
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# SQLite
+db.sqlite3
+
+# Virtual environments
+.venv/

@@ -1,5 +1,7 @@
 # Taxi service startproject
 
+Created by Roman Snitsarenko
+
 In this task, you will start project `Taxi service`.
 
 1. Create a virtual environment, activate it, and install django via pip:
