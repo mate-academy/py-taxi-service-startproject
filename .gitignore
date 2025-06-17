@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.idea/
+.pyc
+
+.env
+.venv
+
+.sqlite3
+.db3
