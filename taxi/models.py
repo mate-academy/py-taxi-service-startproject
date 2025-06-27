@@ -34,4 +34,6 @@ class Car(models.Model):
         ordering = ("model",)
 
     def __str__(self):
-        return f"{self.model}, {self.manufacturer}, {str(self.drivers)}"
+        # return f"{self.model}, {self.manufacturer}, {str(self.drivers)}"
+        driver_usernames = ", ".join(driver.username for driver in self.drivers.all())
+        return f"{self.model}, {self.manufacturer}, {driver_usernames}"
