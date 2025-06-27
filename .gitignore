@@ -1,3 +1,5 @@
 .venv
 checklist.md
-
+pycache
+.idea
+venv
