@@ -1,0 +1,7 @@
+.venv
+checklist.md
+pycache
+.idea
+venv
+sqlite3
+__pycache__/
