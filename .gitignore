@@ -1,0 +1,36 @@
+# Виртуальное окружение
+venv/
+.venv/
+env/
+.env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Логи
+*.log
+
+# База данных SQLite
+db.sqlite3
+
+# Файлы миграций (обычно коммитят, но можно исключить если хочешь)
+# */migrations/*.pyc
+# */migrations/__pycache__/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS специфичные файлы
+.DS_Store
+Thumbs.db
+
+# Файлы секретов
+*.env
+*.secret
+
+# Static файлы, если используешь collectstatic и не хочешь коммитить
+/staticfiles/
