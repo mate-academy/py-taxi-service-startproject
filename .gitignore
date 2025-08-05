@@ -4,3 +4,5 @@
 *.db3
 *.idea
 *.pyc
+venv
+*.pycache
