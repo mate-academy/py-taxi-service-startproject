@@ -9,6 +9,7 @@
 # Python
 __pycache__/
 venv/
+*.pyc
 # IDE
 .idea/
 # Django
