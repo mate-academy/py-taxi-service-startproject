@@ -1,0 +1,30 @@
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Pytest
+.pytest_cache/
+
+# SQLite DB
+db.sqlite3
+
+# Bytecode cache in nested dirs
+**/__pycache__/
+**/*.pyc
