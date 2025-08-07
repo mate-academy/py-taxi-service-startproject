@@ -1,0 +1,4 @@
+.idea
+.venv
+*.sqlite3
+*.pyc
