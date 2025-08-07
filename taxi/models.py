@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from taxi_service import settings
+from django.conf import settings
 
 
 class Manufacturer(models.Model):
@@ -35,7 +35,7 @@ class Car(models.Model):
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
 
-    class Meta:
+    class Meta(AbstractUser.Meta):
         ordering = ("username",)
 
     def __str__(self):
