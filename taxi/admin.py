@@ -18,7 +18,7 @@ class DriverAdmin(UserAdmin):
 
 
 @admin.register(Manufacturer)
-class ManufacturerArmin(admin.ModelAdmin):
+class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ("name", "country",)
 
 
