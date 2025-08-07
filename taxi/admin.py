@@ -23,6 +23,7 @@ class CarAdmin(admin.ModelAdmin):
         "model",
         "manufacturer__name",
     ]
+    list_filter = ["manufacturer"]
 
 
 admin.site.register(Manufacturer)
