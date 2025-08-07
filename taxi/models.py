@@ -21,7 +21,7 @@ class Manufacturer(models.Model):
         ordering = ("name",)
 
     def __str__(self) -> str:
-        return f"{self.name}"
+        return self.name
 
 
 class Car(models.Model):
