@@ -1,0 +1,23 @@
+# Secret Key Here :P
+.env
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# SQLite & DB
+*.sqlite3
+*.db3
+
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
