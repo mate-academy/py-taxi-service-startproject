@@ -1,0 +1,9 @@
+# IDE configs
+.idea
+
+# SQLite database
+*.sqlite3
+
+# Python cache
+*.pyc
+__pycache__/
