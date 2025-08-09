@@ -9,7 +9,7 @@ class DriverAdmin(UserAdmin):
         "license_number",
         "username",
         "email",
-        "password",
+        "is_staff",
         "first_name",
         "last_name"
     )
