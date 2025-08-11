@@ -1,0 +1,9 @@
+.idea
+venv/
+*.sqlite3
+*.py[cod]
+*$py.class
+.DS_Store
+.pytest_cache/
+**__pycache__/
+*.pyc
