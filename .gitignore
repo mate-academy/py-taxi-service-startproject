@@ -1,0 +1,41 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# === Virtual environment ===
+venv/
+.venv/
+env/
+.env/
+
+# === Django specific ===
+db.sqlite3
+media/
+
+# === Environment variables ===
+.env
+*.env
+
+# === IDE / Editors ===
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === Test / coverage ===
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.pytest_cache/
+
+# === Migrations cache ===
+*/migrations/__pycache__/
