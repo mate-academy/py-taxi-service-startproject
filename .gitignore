@@ -1,0 +1,32 @@
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Virtual environments
+venv/
+.venv/
+
+# Python cache and compiled files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Pytest
+.pytest_cache/
+
+# Database files
+*.sqlite3
+*.db
+*.db3
+**/*.sqlite3
+**/*.db
+**/*.db3
