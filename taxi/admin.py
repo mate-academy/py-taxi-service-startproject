@@ -5,6 +5,7 @@ from django.contrib.auth.admin import UserAdmin
 
 class CarAdmin(admin.ModelAdmin):
     list_filter = ("manufacturer",)
+    search_fields = ("model",)
 
 
 @admin.register(Driver)
@@ -12,15 +13,13 @@ class DriverAdmin(UserAdmin):
     list_display = ("username", "first_name", "last_name", "license_number")
     list_filter = ("username", "first_name", "last_name", "license_number")
     fieldsets = UserAdmin.fieldsets + (
-        ("Additional Info", {"fields": ("license_number",)}),
+        ("Additional info", {"fields": ("license_number",)}),
     )
     add_fieldsets = (
-        (None, {
+        ('Additional info', {
             'fields': ('username', 'password1', 'password2', 'license_number'),
-            'description': 'Additional info',
         }),
     )
-    search_fields = ("model",)
 
 
 # Register your models here.
