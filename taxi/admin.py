@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 
 
 class CarAdmin(admin.ModelAdmin):
-    list_filter = ("model", "manufacturer")
+    list_filter = ("manufacturer",)
 
 
 @admin.register(Driver)
@@ -20,6 +20,7 @@ class DriverAdmin(UserAdmin):
             'description': 'Additional info',
         }),
     )
+    search_fields = ("model",)
 
 
 # Register your models here.
