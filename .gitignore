@@ -1,0 +1,111 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.dev
+.env.test
+
+# Virtual environments
+taxi_env/
+venv/
+env/
+ENV/
+.env/
+.venv/
+python_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Build files
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Documentation
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+[Tt]humbs.db
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Docker
+docker-compose.override.yml
+
+# Backup files
+*.bak
+*.backup
+
+# Migrations (optional - раскомментируйте если нужно)
+# */migrations/*.py
+# !*/migrations/__init__.py
