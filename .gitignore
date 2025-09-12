@@ -1,0 +1,26 @@
+# Environment variables and sensitive settings
+.env
+local_settings.py
+*.log
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# SQLite database
+*.sqlite3
+*.sqlite
+*.db3
+*.db
