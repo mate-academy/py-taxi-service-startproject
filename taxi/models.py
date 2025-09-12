@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from taxi_service.settings import AUTH_USER_MODEL
+from taxi_service import settings
 
 
 # Create your models here.
@@ -17,7 +17,7 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name='cars'
     )
-    drivers = models.ManyToManyField(AUTH_USER_MODEL, related_name='cars')
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='cars')
 
 
 class Driver(AbstractUser):
