@@ -1,0 +1,14 @@
+venv/
+
+__pycache__/
+*.py[cod]
+
+# Базы данных и миграции, если не нужно пушить
+*.sqlite3
+*.db
+
+.idea/
+
+.env
+
+*.DS_Store
