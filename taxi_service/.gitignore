@@ -1,0 +1,32 @@
+# Python
+*.py[cod]
+*$py.class
+__pycache__/
+*.pyc
+
+# virtualenv
+venv/
+.env
+
+# Django
+local_settings.py
+*.sqlite3
+*.sqlite
+*.db3
+*.db
+
+# Editor & OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# PyCharm
+*.iml
+
+# coverage
+htmlcov/
+.coverage
+
+# pipenv
+Pipfile.lock
