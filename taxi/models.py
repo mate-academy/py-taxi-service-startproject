@@ -1,19 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
-
-class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255, unique=True)
-
-    class Meta:
-        verbose_name = "driver"
-        verbose_name_plural = "drivers"
-
-    # se quiser exigir na CLI do createsuperuser:
-    REQUIRED_FIELDS = ["email", "license_number"]
-
-    def __str__(self) -> str:  # pragma: no cover
-        return f"{self.username} ({self.license_number})"
+from django.conf import settings
 
 
 class Manufacturer(models.Model):
@@ -23,8 +10,23 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ["name"]
 
-    def __str__(self) -> str:  # pragma: no cover
-        return f"{self.name} ({self.country})"
+    def __str__(self) -> str:  # simples, estilo checklist
+        return self.name
+
+
+class Driver(AbstractUser):
+    license_number = models.CharField(max_length=255, unique=True)
+
+    # campos exigidos ao criar superuser pelo createsuperuser
+    REQUIRED_FIELDS = ["email", "license_number"]
+
+    # Meta após atributos de classe (conforme checklist)
+    class Meta:
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
+
+    def __str__(self) -> str:
+        return self.username
 
 
 class Car(models.Model):
@@ -34,10 +36,15 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars",
     )
-    drivers = models.ManyToManyField("Driver", related_name="cars", blank=True)
+    # usar AUTH_USER_MODEL (conforme checklist)
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="cars",
+        blank=True,
+    )
 
     class Meta:
         ordering = ["model"]
 
-    def __str__(self) -> str:  # pragma: no cover
-        return f"{self.model} — {self.manufacturer.name}"
+    def __str__(self) -> str:
+        return self.model
