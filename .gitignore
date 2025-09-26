@@ -1,13 +1,10 @@
-    # Environments
-    .venv/
-    venv/
-
-    # Python cache
-    __pycache__/
-    *.pyc
-
-    # IDE configuration
-    .idea/
-
-    # Database file
-    db.sqlite3
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+db.sqlite3
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
