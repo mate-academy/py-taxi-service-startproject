@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+db.sqlite3
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
