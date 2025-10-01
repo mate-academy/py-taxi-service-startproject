@@ -1,0 +1,71 @@
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+.env/
+
+# Кэш и временные файлы
+*.log
+*.tmp
+*.bak
+*.swp
+
+# --- PyCharm ---
+.idea/
+
+# --- VSCode ---
+.vscode/
+
+# --- Системные файлы ---
+.DS_Store
+Thumbs.db
+
+# --- Пакеты и сборки ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Тестирование ---
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints
+*.ipynb_save
+
+# --- pip ---
+pip-wheel-metadata/
+__pypackages__/
+
+# --- Docker ---
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# --- Django специфичное ---
+# База данных SQLite
+*.sqlite3
+*.sqlite
+*.db3
+
+# Секреты и ключи
+*.env
+.env.*
+
+# Статические и медиа файлы (генерируются при collectstatic и загрузках)
+staticfiles/
+media/
+
+# Миграции (опционально: если работаешь один, можно игнорировать; в команде — лучше хранить)
+# */migrations/
+# но оставляем __init__.py
+!*/migrations/__init__.py
