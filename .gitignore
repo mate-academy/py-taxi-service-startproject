@@ -1,0 +1,33 @@
+# --- Virtual environments ---
+.venv/
+venv/
+
+# --- Python caches / builds ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# --- Test & type-checker caches ---
+.pytest_cache/
+.mypy_cache/
+
+# --- Databases (don’t commit DB files) ---
+db.sqlite3
+*.sqlite3
+*.sqlite
+*.db3
+*.db
+
+# --- IDE / Editor ---
+.idea/
+.vscode/
+*.iml
+
+# --- Env files / secrets ---
+.env
+.env.*
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
