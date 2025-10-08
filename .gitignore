@@ -1,0 +1,5 @@
+pycache/
+venv/
+.idea/
+.vscode/
+db.sqlite3
