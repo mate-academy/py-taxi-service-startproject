@@ -1,5 +1,5 @@
 from django.db import models
-from taxi_service.settings import AUTH_USER_MODEL
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 
 
@@ -14,10 +14,19 @@ class Manufacturer(models.Model):
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=50, unique=True)
 
+    def __str__(self) -> str:
+        return self.username
+
 
 class Car(models.Model):
     model = models.CharField(max_length=50)
     manufacturer = models.ForeignKey(
         to=Manufacturer,
-        on_delete=models.DO_NOTHING)
-    driver = models.ManyToManyField(to=AUTH_USER_MODEL, related_name="cars")
+        on_delete=models.DO_NOTHING,
+        related_name="cars")
+    driver = models.ManyToManyField(
+        to=settings.AUTH_USER_MODEL,
+        related_name="cars")
+
+    def __str__(self) -> str:
+        return self.model
