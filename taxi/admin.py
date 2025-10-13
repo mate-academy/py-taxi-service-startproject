@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from taxi.models import Manufacture, Driver, Car
+from taxi.models import Manufacturer, Driver, Car
 
 
-@admin.register(Manufacture)
-class ManufactureAdmin(admin.ModelAdmin):
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ("name", "country")
     search_fields = ("name", "country")
 
