@@ -13,10 +13,10 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets + (
-        ("Additional information", {"fields": ("license_number",)}),
+        ("Additional info", {"fields": ("license_number",)}),
     )
     add_fieldsets = UserAdmin.add_fieldsets + (
-        ("Additional information", {"fields": ("license_number",)}),
+        ("Additional info", {"fields": ("license_number",)}),
     )
     list_display = ("username", "first_name", "last_name", "license_number", "is_staff")
     search_fields = ("username", "license_number", "email")
@@ -25,4 +25,5 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
+    list_filter = ("manufacturer",)
     search_fields = ("model",)

@@ -1,6 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-
+from django.conf import settings
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
@@ -15,7 +15,7 @@ class Car(models.Model):
     manufacturer = models.ForeignKey(
         "Manufacturer", on_delete=models.CASCADE, related_name="cars"
     )
-    drivers = models.ManyToManyField("Driver", related_name="cars")
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
 
     class Meta:
         ordering = ["manufacturer__name", "model"]
