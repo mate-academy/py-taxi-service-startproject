@@ -1,0 +1,30 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts and distributions
+dist/
+build/
+*.egg-info/
+
+# Log files and temporary data
+*.log
+*.tmp
+
+# Sensitive information
+.env
+config.ini
+
+# Ignore SQLite database files
+*.sqlite3
+db.sqlite3
