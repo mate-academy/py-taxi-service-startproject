@@ -5,4 +5,4 @@ taxi/__pycache__/
 taxi/migrations/__pycache__/
 tests/__pycache__/
 db.sqlite3
-pyc
+*.pyc
