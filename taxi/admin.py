@@ -15,7 +15,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ["name", "country",]
 
 
-class DriverAdmin(admin.ModelAdmin):
+class DriverAdmin(UserAdmin):
     list_display = ["license_number", "username",]
     fieldsets = UserAdmin.fieldsets + (("Additional info", {
         "fields": ("license_number",)
