@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
+from django.conf import settings
 from .models import Manufacturer, Car, Driver
 
 
@@ -40,15 +41,8 @@ class DriverAdmin(UserAdmin):
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
     )
 
-    add_fieldsets = (
-        (None, {
-            "classes": ("wide",),
-            "fields": (
-                "username",
-                "password1",
-                "password2",
-            ),
-        }),
+    # Правильний спосіб: додаємо лише додаткове поле, не замінюючи стандартні поля
+    add_fieldsets = UserAdmin.add_fieldsets + (
         (_("Additional info"), {
             "fields": ("license_number",),
         }),
