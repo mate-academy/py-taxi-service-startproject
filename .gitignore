@@ -1,0 +1,68 @@
+# ---- Python ----
+__pycache__/
+pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+dist/
+build/
+
+# ---- Virtual environments ----
+.env
+.venv/
+env/
+venv/
+
+# ---- Django ----
+# SQLite DB (if used, optional)
+db.sqlite3
+db.sqlite3-journal
+*.sqlite
+*.db3
+sqlite3
+
+# Django logs
+*.log
+
+# Media files (user uploads)
+media/
+# If you store media in another place, adjust or remove.
+
+# Static files (collected)
+staticfiles/
+static/
+
+# Local settings (secret keys, credentials)
+# Only if you actually create such a file
+local_settings.py
+
+# Environment vars
+.env.local
+.env.dev
+.env.prod
+.env.*
+*.env
+
+# But keep __init__.py in migrations folders
+!*/migrations/__init__.py
+
+# PyCharm / IntelliJ
+.idea/
+idea
+
+# ---- OS files ----
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ---- Tools ----
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Pytest
+.pytest_cache/
