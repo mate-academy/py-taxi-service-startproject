@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Local settings overrides
+*.local
+*.env
+.env
+.env.*
+
+# --- Django ---
+# SQLite database
+db.sqlite3
+db.sqlite3-journal
+
+# Django logs
+*.log
+
+# Django static and media
+static/
+media/
+
+# Migrations caches
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- OS files ---
+Thumbs.db
+Desktop.ini
