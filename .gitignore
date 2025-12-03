@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sql
+*.sqlite3
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.egg-info/
+*.egg
+.eggs/
