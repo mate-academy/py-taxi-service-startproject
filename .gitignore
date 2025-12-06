@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Django stuff
+*.sqlite3
+media/
+staticfiles/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Backup / logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+*.env
