@@ -1,3 +1,7 @@
 venv
-pycache
+__pycache__/
 .idea
+*.sqlite3
+*.sqlite
+*.db3
+db.sqlite3

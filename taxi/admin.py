@@ -2,7 +2,6 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from taxi.models import Driver, Manufacturer, Car
 
-# Register your models here.
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
