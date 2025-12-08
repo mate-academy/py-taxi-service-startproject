@@ -1,7 +1,10 @@
 venv/
 *.pyc
-pycache/
-db.sqlite3
+__pycache__/
+*.sqlite3
+*.sqlite
+*.db
+*.db3
 .env
 .vscode/
 .idea/
