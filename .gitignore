@@ -10,6 +10,8 @@ venv/
 # SQLite databases
 *.sqlite3
 *.db
+*.sqlite
+*.db3
 
 # Django stuff
 staticfiles/
