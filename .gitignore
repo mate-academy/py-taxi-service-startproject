@@ -1,0 +1,47 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.swp
+
+# Env
+env/
+venv/
+ENV/
+.venv/
+
+# Django
+*.sqlite3
+*.log
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Coverage reports
+htmlcov/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
