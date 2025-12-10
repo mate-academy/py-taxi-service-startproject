@@ -22,14 +22,9 @@ staticfiles/
 
 # IDE / editors
 .vscode/
-.idea/
 *.swp
+idea
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Migrations
-*/migrations/*
-!*/migrations/__init__.py
-idea
