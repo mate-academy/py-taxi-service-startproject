@@ -22,7 +22,8 @@ class Car(models.Model):
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=55, unique=True)
-    country = models.CharField(max_length=55)
+    country = models.CharField(max_length=55, default="Unknown")  # default задаёт значение для новых и существующих записей
 
     def __str__(self):
         return self.name
+
