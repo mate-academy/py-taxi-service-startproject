@@ -1,0 +1,19 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+
+# Django
+/media/
+/static/
+
+# Database
+*.sqlite3
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# IDE (PyCharm)
+.idea/
