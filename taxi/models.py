@@ -16,15 +16,15 @@ class Car(models.Model):
     drivers = models.ManyToManyField("Driver", related_name="cars")
 
     def __str__(self):
-        return f"{self.model}"
+        return self.model
 
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=20, unique=True)
 
     class Meta:
-        verbose_name = "Driver"
-        verbose_name_plural = "Drivers"
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
 
     def __str__(self):
         return f"{self.username} | {self.first_name} |{self.last_name} | {self.license_number}"

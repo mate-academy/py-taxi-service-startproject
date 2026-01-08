@@ -14,7 +14,7 @@ class DriverAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number", )}),)
     add_fieldsets = UserAdmin.add_fieldsets + (("Additional info", {"fields": ("license_number", "first_name", "last_name", )}),)
 
-# Register your models here.7
+
 admin.site.register(Manufacturer)
 admin.site.register(Driver, DriverAdmin)
 admin.site.register(Car, CarAdmin)
