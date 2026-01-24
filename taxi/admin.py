@@ -13,8 +13,8 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     list_display = ('model', 'manufacturer')
-    search_fields = ('model',)  # пошук за моделлю
-    list_filter = ('manufacturer',)  # фільтр за виробником
+    search_fields = ('model',)
+    list_filter = ('manufacturer',)
     autocomplete_fields = ('manufacturer',)
     filter_horizontal = ('drivers',)
 

@@ -1,5 +1,14 @@
-idea
-sqlite3
-pyc
+# Virtual environment
+venv/
+.venv/
 
+# Python
+__pycache__/
+*.pyc
 
+# Django
+db.sqlite3
+
+# IDE
+.idea/
+.vscode/
