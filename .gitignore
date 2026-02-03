@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# Migrations (иногда оставляют — см. ниже)
+# */migrations/
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Static files
+staticfiles/
+static/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+*.egg-info/
