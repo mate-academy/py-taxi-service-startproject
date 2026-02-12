@@ -11,7 +11,7 @@ class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
         to=Manufacturer, on_delete=models.CASCADE,
-        related_name="cars_set"
+        related_name="cars"
     )
     drivers = models.ManyToManyField(
         "Driver", related_name="cars"
@@ -25,4 +25,4 @@ class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
 
     def __str__(self) -> str:
-        return f"{self.username}"
+        return self.username
