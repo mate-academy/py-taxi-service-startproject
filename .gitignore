@@ -1,0 +1,19 @@
+# Віртуальне середовище
+venv/
+
+# Python кеші
+__pycache__/
+*.pyc
+*.pyo
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Django
+*.sqlite3
+*.log
+
+# IDE/Editor
+.vscode/
+.idea/
