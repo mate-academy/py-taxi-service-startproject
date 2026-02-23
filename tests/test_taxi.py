@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 import os.path
+from taxi.models import Manufacturer, Car
 
 
 class AdminSiteDriverTests(TestCase):
@@ -79,3 +80,13 @@ class GitignoreTests(TestCase):
             assert "idea" in gitignore_content
             assert "sqlite3" in gitignore_content
             assert "pyc" in gitignore_content
+
+class ModelTests(TestCase):
+    def test_manufacturer_str(self):
+        manufacturer = Manufacturer.objects.create(name="Toyota", country="Japan")
+        self.assertEqual(str(manufacturer), "Toyota")
+
+    def test_car_str(self):
+        manufacturer = Manufacturer.objects.create(name="Toyota", country="Japan")
+        car = Car.objects.create(model="Camry", manufacturer=manufacturer)
+        self.assertEqual(str(car), "Camry")
