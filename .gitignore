@@ -1,0 +1,10 @@
+.github
+.pytest_cache
+__pycache__
+.idea
+idea
+sqlite3
+*sqlite3
+*sqlite3*
+venv
+venv/
