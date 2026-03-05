@@ -3,7 +3,6 @@ venv/
 env/
 *.sqlite3
 __pycache__/
-*.py[cod]
 .idea/
 .DS_Store
 Thumbs.db
