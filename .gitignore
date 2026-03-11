@@ -1,0 +1,11 @@
+venv/
+.venv/
+pycache/
+*.pyc
+.pytest_cache/
+.idea/
+.vscode/
+db.sqlite3
+*.log
+*.egg-info/
+.env
