@@ -7,7 +7,8 @@ from taxi.models import Car, Driver, Manufacturer
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     list_display = ("model", "manufacturer", "get_drivers")
-    search_fields = ("model", "manufacturer__name")
+    search_fields = ("model",)
+    list_filter = ("manufacturer",)
 
     def get_drivers(self, obj):
         return ", ".join(

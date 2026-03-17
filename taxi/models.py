@@ -31,7 +31,10 @@ class Car(models.Model):
         null=True,
         blank=True
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="cars"
+    )
 
     def __str__(self) -> str:
         return self.model
