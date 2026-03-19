@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Driver, Car, Manufacturer
 from django.contrib.auth.admin import UserAdmin
-from django.conf import settings
 
 admin.site.register(Manufacturer)
 
