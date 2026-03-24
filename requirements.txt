@@ -1,0 +1,12 @@
+asgiref==3.11.1
+Django==5.2.12
+sqlparse==0.5.5
+tzdata==2025.3
+
+# Tests (Cursor / VS Code Testing panel)
+pytest==8.3.5
+pytest-django==4.10.0
+
+# Lint
+flake8==7.1.2
+flake8-quotes==3.4.0
