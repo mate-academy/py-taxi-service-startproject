@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractUser, User
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 from taxi_service import settings
@@ -25,11 +25,11 @@ class Car(models.Model):
         related_name="cars"
     )
 
-class Meta:
-        ordering = ("model",)
+    class Meta:
+            ordering = ("model",)
 
-def __str__(self):
-        return f"{self.model} {self.manufacturer}"
+    def __str__(self):
+            return f"{self.model} {self.manufacturer}"
 
 
 class Driver(AbstractUser):
