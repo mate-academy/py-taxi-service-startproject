@@ -1,0 +1,19 @@
+# django
+*.log
+*.pot
+*.pyc
+**__pycache__/
+**db.sqlite3
+media
+
+# PyCharm
+.idea/
+
+# Enviroments
+*.iml
+env/
+ENV/
+.env
+venv/
+.venv
+.pytest_cache/
