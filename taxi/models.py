@@ -1,9 +1,14 @@
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
+
+    class Meta:
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
 
 
 class Manufacturer(models.Model):
@@ -18,4 +23,4 @@ class Car(models.Model):
         on_delete=models.CASCADE,
         related_name="cars"
     )
-    drivers = models.ManyToManyField(Driver, related_name="cars")
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="cars")
