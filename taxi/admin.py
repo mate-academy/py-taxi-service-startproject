@@ -18,12 +18,12 @@ class AdminDriver(UserAdmin):
 
 
 @admin.register(Manufacturer)
-class AdminManufacturer(UserAdmin):
+class AdminManufacturer(admin.ModelAdmin):
     list_display = ("name", "country",)
     list_filter = ("name",)
 
 
 @admin.register(Car)
-class AdminCar(UserAdmin):
-    list_display = ("model", "manufacturer",)
+class AdminCar(admin.ModelAdmin):
+    list_display = ("model",)
     list_filter = ("manufacturer",)
