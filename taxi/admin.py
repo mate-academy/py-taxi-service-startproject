@@ -5,7 +5,7 @@ from taxi.models import Driver, Manufacturer, Car
 
 
 @admin.register(Driver)
-class AdminDriver(admin.ModelAdmin):
+class AdminDriver(UserAdmin):
     list_display = ["license_number",
                     "username",
                     "email",
@@ -18,12 +18,12 @@ class AdminDriver(admin.ModelAdmin):
 
 
 @admin.register(Manufacturer)
-class AdminManufacturer(admin.ModelAdmin):
-    list_display = ("name", "country")
+class AdminManufacturer(UserAdmin):
+    list_display = ("name", "country",)
     list_filter = ("name",)
 
 
 @admin.register(Car)
-class AdminCar(admin.ModelAdmin):
-    list_display = ("model", "manufacturer")
-    search_fields = ("model", "manufacturer__name")
+class AdminCar(UserAdmin):
+    list_display = ("model", "manufacturer",)
+    list_filter = ("manufacturer",)
