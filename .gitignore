@@ -11,8 +11,6 @@ db.sqlite3
 *.log
 media/
 
-**/migrations/*
-!**/migrations/__init__.py
 
 .idea/
 .vscode/
