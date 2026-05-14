@@ -10,7 +10,7 @@ class Driver(AbstractUser):
     def __str__(self) -> str:
         full_name = self.get_full_name()
         if full_name:
-            return f"{self.get_username()} - {self.get_full_name()}"
+            return self.get_username() + " - " + self.get_full_name()
         return self.get_username()
 
 
@@ -31,4 +31,4 @@ class Car(models.Model):
         default_related_name = "cars"
 
     def __str__(self) -> str:
-        return f"{self.manufacturer.name} {self.model}"
+        return self.manufacturer.name + " - " + {self.model}
