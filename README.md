@@ -35,11 +35,12 @@ python manage.py startapp taxi
 
 ![image](https://user-images.githubusercontent.com/80070761/159295912-d02c7080-09a7-41ec-aa86-b0ae3afdd75b.png)
 
-**Note**: `license_number` and `Manufacturer: name` fields should be unique.
+**Note**:    -----DONE---- `license_number` and `Manufacturer: name` fields should be unique. 
 
 5. You have noticed that `Driver` inherits from `AbstractUser`. It means that
 the standard `User` model should be replaced with the model `Driver`. Notice, that
 `Driver` has an additional field compared to the standard `User`.
+   -----DONE----
 
 6. Edit `admin.py`:
     - Register all your models in the admin.
@@ -50,6 +51,7 @@ category, so you can edit this field while updating `Driver`.
 category, so you can fill this field while adding a driver.
     - Make it possible to search `Car` by `model`.
     - Make it possible to filter `Car` by `manufacturer`.
+   -----DONE----
 
 7. Make migrations and migrate.
 8. Use `python manage.py test` to run tests.
