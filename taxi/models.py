@@ -31,4 +31,4 @@ class Car(models.Model):
         default_related_name = "cars"
 
     def __str__(self) -> str:
-        return self.manufacturer.name + " - " + {self.model}
+        return self.manufacturer.name + " - " + self.model
