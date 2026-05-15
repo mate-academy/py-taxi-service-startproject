@@ -6,7 +6,7 @@ from django.db import models
 class Car(models.Model):
     model = models.CharField(max_length=255, null=False, blank=False)
     manufacturer = models.ForeignKey("Manufacturer", on_delete=models.CASCADE)
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True)
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name="cars")
 
 
 class Manufacturer(models.Model):
