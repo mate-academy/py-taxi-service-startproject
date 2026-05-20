@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Django
+*.sqlite3
+*.db3
+*.db
+local_settings.py
+media/
+
+# Migrations (mantenha apenas se o projeto pedir para commitar)
+# taxi/migrations/ (neste projeto, commitar as migrations é obrigatório)
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage / tests
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Static files coletados
+staticfiles/
+static_root/
