@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+venv/
+
+# IDE
+.idea/
+
+# Django
+db.sqlite3
+*.log
+
+# MacOS
+.DS_Store
