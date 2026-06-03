@@ -8,8 +8,8 @@ admin.site.register(Manufacturer)
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    search_fields = ('model', 'Manufacturer',)
-
+    search_fields = ['model', 'manufacturer',]
+    list_filter = ['manufacturer',]
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
