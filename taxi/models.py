@@ -13,7 +13,7 @@ class Manufacturer(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255, null=True, blank=True)
+    license_number = models.CharField(max_length=255, null=False, blank=False)
 
     def __str__(self) -> str:
         return f'{self.username} {self.license_number}'
