@@ -11,7 +11,7 @@ class Manufacturer(models.Model):
 
     class Meta:
         verbose_name = "manufacturer"
-        verbose_name_plural = "manufactures"
+        verbose_name_plural = "manufacturers"
 
 
 class Driver(AbstractUser):

@@ -4,3 +4,7 @@ __pycache__/
 .idea/
 *.sqlite3
 db.sqlite3
+*.sqlite
+*.db3
+
+
