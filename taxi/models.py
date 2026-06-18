@@ -18,4 +18,7 @@ class Car(models.Model):
         Manufacturer,
         on_delete=models.CASCADE,
     )
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name='cars',
+    )
