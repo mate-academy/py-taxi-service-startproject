@@ -14,8 +14,6 @@ class DriverAdmin(UserAdmin):
             "Additional info",
             {
                 "fields": (
-                    "first_name",
-                    "last_name",
                     "license_number",
                 )
             },
