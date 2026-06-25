@@ -59,15 +59,14 @@ class Driver(AbstractUser):
     REQUIRED_FIELDS = ["license_number"]
 
     def __str__(self):
-        return f"{self.username} ({self.license_number})"
-
+        return self.username (self.license_number)
 
 class Manufacturer(models.Model):
     name = models.CharField(unique=True, max_length=100)
     country = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.name} - {self.country}"
+        return self.name - self.country
 
 
 class Car(models.Model):
@@ -78,4 +77,4 @@ class Car(models.Model):
     drivers = models.ManyToManyField("Driver", related_name="cars")
 
     def __str__(self):
-        return f"{self.model}:{self.manufacturer}, {self.drivers}"
+        return self.model
