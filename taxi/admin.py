@@ -21,7 +21,7 @@ class CarAdmin(admin.ModelAdmin):
     list_display = (
         "model",
         "manufacturer",
-    )  # Можна додати й інші поля
+    )
     list_filter = ("manufacturer",)
     search_fields = ("model",)
 

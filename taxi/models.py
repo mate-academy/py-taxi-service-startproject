@@ -59,14 +59,14 @@ class Driver(AbstractUser):
     REQUIRED_FIELDS = ["license_number"]
 
     def __str__(self):
-        return self.username (self.license_number)
+        return self.username
 
 class Manufacturer(models.Model):
     name = models.CharField(unique=True, max_length=100)
     country = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name - self.country
+        return self.name
 
 
 class Car(models.Model):
