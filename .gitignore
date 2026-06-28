@@ -1,0 +1,12 @@
+# IDE settings (містить підрядок "idea")
+.idea/
+
+# Database (містить підрядок "sqlite3")
+*.sqlite3
+
+# Python compiled files (містить підрядок "pyc")
+*.pyc
+
+# Virtual environment
+venv/
+__pycache__/
