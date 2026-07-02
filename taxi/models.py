@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
     class Meta:
@@ -21,7 +21,7 @@ class Driver(AbstractUser):
         ordering = ("username",)
 
     def __str__(self):
-        return f"{self.username}: ({self.first_name} {self.last_name})"
+        return self.username
 
 
 class Car(models.Model):
@@ -36,9 +36,5 @@ class Car(models.Model):
     class Meta:
         ordering = ("model",)
 
-    def __str__(self):
-        return (
-            f"{self.model} ("
-            f"manufacturer: {self.manufacturer.name},"
-            f"country: {self.manufacturer.country},"
-        )
+    def __str__(self) -> str:
+        return f"{self.model} ({self.manufacturer.name})"
