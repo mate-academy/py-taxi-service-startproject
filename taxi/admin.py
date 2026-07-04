@@ -6,7 +6,8 @@ from taxi.models import Manufacturer, Car, Driver
 
 @admin.register(Manufacturer)
 class ManufacturerAdmin(admin.ModelAdmin):
-    pass
+    def __str__(self):
+        return f"{self.model} ({self.manufacturer})"
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):

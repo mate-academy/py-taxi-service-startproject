@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 from django.db import models
 
+from taxi_service import settings
 
 
 class Manufacturer(models.Model):
@@ -10,7 +11,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=63)
 
     def __str__(self):
-        return f"{self.name} ({self.country})"
+        return self.name
 
 
 
@@ -27,7 +28,7 @@ class Driver(AbstractUser):
 class Car(models.Model):
     model = models.CharField(max_length=63, )
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
-    driver = models.ManyToManyField(Driver)
+    driver = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
     def __str__(self):
-        return f"{self.model} ({self.manufacturer}) {self.driver}"
+        return f"{self.model} ({self.manufacturer})"
