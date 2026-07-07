@@ -1,5 +1,5 @@
 from django.contrib.auth.models import AbstractUser
-
+from django.conf import settings
 from django.db import models
 
 
@@ -11,13 +11,13 @@ class Manufacturer(models.Model):
         ordering = ["name"]
 
     def __str__(self):
-        return f"{self.name} {self.country}"
+        return self.name
 
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE, related_name="cars")
-    drivers = models.ManyToManyField("Driver")
+    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL)
 
     class Meta:
         ordering = ["model"]
@@ -33,4 +33,4 @@ class Driver(AbstractUser):
         ordering = ["username"]
 
     def __str__(self):
-        return f"{self.username} ({self.first_name} {self.last_name})"
+        return self.username
