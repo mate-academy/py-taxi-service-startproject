@@ -2,7 +2,6 @@ from django.contrib import admin
 from taxi.models import Manufacturer, Car, Driver
 from django.contrib.auth.admin import UserAdmin
 
-# Register your models here.
 
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
@@ -13,7 +12,7 @@ class DriverAdmin(UserAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-  search_fields = ["models"]
+  search_fields = ["model"]
   list_filter = ["manufacturer"]
 
 
