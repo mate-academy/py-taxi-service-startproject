@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'taxi/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <aside>
+            <p>{{ page_title }}</p>
+            <div>
+                {% if request.user.is_authenticated %}
+                    <p>User: {{ request.user }}</p>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Logout</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}">Login</a>
+                {% endif %}
+            </div>
+            <br>
+            <div>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'cars' %}">All cars</a>
+                <a href="{% url 'drivers' %}">All drivers</a>
+                <a href="{% url 'manufacturers' %}">All manufacturers</a>
+            </div>
+        </aside>
+        <div class="content">
+            <main>
+                {% block content %}{% endblock %}
+            </main>
+
+            <footer class="footer">
+                <p>Taxi_Servise@com.ua</p>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>

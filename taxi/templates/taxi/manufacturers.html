@@ -1,0 +1,15 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Manufacturers{% endblock %}
+
+{% block content %}
+    <h1>All Manufacturers</h1>
+
+    <div>
+        <ol>
+            {% for manufacturer in manufacturers %}
+                <li>{{ manufacturer }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endblock %}
