@@ -4,6 +4,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pyc
 
 # ==============================================================================
 # Virtual Environments (Highly recommended to exclude)
@@ -22,55 +23,11 @@ pythonenv/
 .env.*
 !.env.example
 
-# ==============================================================================
-# Distribution / Packaging / Build Artifacts
-# ==============================================================================
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
 # ==============================================================================
-# Testing, Coverage, and Linters
+# DB
 # ==============================================================================
-.htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
+.sqlite3
 
-# ==============================================================================
-# Jupyter Notebooks (Temporary checkpoints)
-# ==============================================================================
-.ipynb_checkpoints
+.idea
 
-# ==============================================================================
-# IDE & Text Editors (Optional but highly recommended)
-# ==============================================================================
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store

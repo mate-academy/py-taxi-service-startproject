@@ -1,0 +1,40 @@
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+aside a {
+    display: block;
+    padding: 10px 0;
+    border: 1px solid blue;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    line-height: 60px;
+}
+

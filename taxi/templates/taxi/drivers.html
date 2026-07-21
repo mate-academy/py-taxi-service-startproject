@@ -1,0 +1,15 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Drivers{% endblock %}
+
+{% block content %}
+    <h1>All Drivers</h1>
+
+    <div>
+        <ol>
+            {% for driver in drivers %}
+                <li>{{ driver }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endblock %}

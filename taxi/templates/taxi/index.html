@@ -1,0 +1,23 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}TS Home Page{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Taxi Service</h1>
+        <p>Welcome to our Taxi</p>
+    </header>
+    <main>
+        <h2>Taxi Service content:</h2>
+        <ul>
+            <li>Num cars: {{ cars_count }}</li>
+            <li>Num drivers: {{ drivers_count }}</li>
+            <li>Num manufacturers: {{ manufacturers_count }}</li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>Taxi_Servise@com.ua</p>
+        </div>
+    </footer>
+{% endblock %}
