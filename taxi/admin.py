@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from django.contrib.auth.admin import UserAdmin
 
 from taxi.models import Manufacturer, Driver, Car
@@ -9,6 +10,7 @@ from taxi.models import Manufacturer, Driver, Car
 class CarAdmin(admin.ModelAdmin):
     list_display = ("model", "manufacturer",)
     list_filter =  ("model", "manufacturer",)
+    search_fields = ("model","manufacturer",)
 
 
 @admin.register(Driver)
