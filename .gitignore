@@ -1,0 +1,17 @@
+# Робоче середовище та налаштування IDE
+.idea/
+.vscode/
+
+venv/
+env/
+ENV/
+
+__pycache__/
+db.sqlite3
+
+.env
+
+.DS_Store
+Thumbs.db
+/static/
+/media/
