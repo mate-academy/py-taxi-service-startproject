@@ -14,7 +14,7 @@ class DriverAdmin(UserAdmin):
             }
         ),
     )
-    add_fieldsets = UserAdmin.fieldsets + (
+    add_fieldsets = UserAdmin.add_fieldsets + (
         (
             "Additional info",
             {
