@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.swp
+db.sqlite3
