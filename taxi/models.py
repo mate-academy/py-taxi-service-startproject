@@ -11,7 +11,7 @@ class Manufacturer(models.Model):
         verbose_name = "manufacturer"
         verbose_name_plural = "manufacturers"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
@@ -40,5 +40,5 @@ class Car(models.Model):
         verbose_name = "car"
         verbose_name_plural = "cars"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.manufacturer.name} {self.model}"

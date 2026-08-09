@@ -24,4 +24,3 @@ class CarAdmin(admin.ModelAdmin):
 @admin.register(Manufacturer)
 class ManufacturerAdmin(admin.ModelAdmin):
     pass
-#
