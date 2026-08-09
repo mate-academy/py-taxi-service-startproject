@@ -1,2 +1,5 @@
-# created by virtualenv automatically idea db.sqlite3 pyc
-
+venv/
+db.sqlite3
+*.sqlite3
+__pycache__/
+.idea/
