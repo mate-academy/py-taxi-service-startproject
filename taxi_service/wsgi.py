@@ -1,5 +1,5 @@
 """
-WSGI config for taxi_sevice project.
+WSGI config for taxi_service project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taxi_sevice.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taxi_service.settings')
 
 application = get_wsgi_application()

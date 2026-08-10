@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from taxi_sevice import settings
+from taxi_service import settings
 
 
 class Manufacturer(models.Model):
