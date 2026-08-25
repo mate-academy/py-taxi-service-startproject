@@ -14,7 +14,7 @@ class Manufacturer(models.Model):
         )
 
     def __str__(self) -> str:
-        return f"{self.name} ({self.country})"
+        return self.name
 
 
 class Driver(AbstractUser):
@@ -27,7 +27,7 @@ class Driver(AbstractUser):
         )
 
     def __str__(self) -> str:
-        return f"({self.first_name}, {self.last_name}, {self.license_number})"
+        return f"{self.first_name} {self.last_name}"
 
 
 class Car(models.Model):
