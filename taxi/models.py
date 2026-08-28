@@ -17,6 +17,8 @@ class Car(models.Model):
 
     class Meta:
         ordering = ("model",)
+        verbose_name_plural = "cars"
+        verbose_name = "car"
 
     def __str__(self):
         return f"{self.model} ({self.manufacturer.name})"
@@ -27,6 +29,8 @@ class Driver(AbstractUser):
 
     class Meta:
         ordering = ("username",)
+        verbose_name_plural = "drivers"
+        verbose_name = "driver"
 
     def __str__(self):
         return f"{self.username}: ({self.first_name} {self.last_name})"
@@ -38,6 +42,8 @@ class Manufacturer(models.Model):
 
     class Meta:
         ordering = ("name",)
+        verbose_name_plural = "manufacturers"
+        verbose_name = "manufacturer"
 
     def __str__(self):
         return f"{self.name} ({self.country})"
