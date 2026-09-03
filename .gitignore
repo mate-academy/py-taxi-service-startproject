@@ -1,3 +1,7 @@
 .idea
 .sqlite3
 .pyc
+.venv
+.__pycache__
+.db3
+.db.sqlite3
