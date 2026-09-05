@@ -1,0 +1,22 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Local databases
+*.sqlite3
+*.db
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+
+# macOS files
+.DS_Store
