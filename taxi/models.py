@@ -1,6 +1,8 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from taxi_service import settings
+
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -17,8 +19,8 @@ class Driver(AbstractUser):
     )
 
     class Meta:
-        verbose_name = "Driver"
-        verbose_name_plural = "Drivers"
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
 
     def __str__(self):
         return self.get_full_name() or self.username
@@ -34,7 +36,7 @@ class Car(models.Model):
     )
 
     drivers = models.ManyToManyField(
-        Driver,
+        settings.AUTH_USER_MODEL,
         related_name="cars",
         blank=True,
     )
