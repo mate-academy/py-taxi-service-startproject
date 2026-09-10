@@ -1,0 +1,7 @@
+.vscode/
+.github/
+.venv/
+.idea/
+*.sqlite3
+*.pyc
+__pycache__/
