@@ -1,0 +1,18 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Driver form{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Driver form</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <a href="{% url 'driver-list' %}">Back to driver list</a>
+</div>
+{% endblock %}
+

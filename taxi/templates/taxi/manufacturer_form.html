@@ -1,0 +1,18 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Manufacturer form{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Manufacturer form</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <a href="{% url 'manufacturer-list' %}">Back to manufacturer list</a>
+</div>
+{% endblock %}
+

@@ -1,0 +1,21 @@
+{% extends "taxi/base.html" %}
+
+{% block content %}
+  <h1>{{ car.model }}</h1>
+  <p>Manufacturer: {{ car.manufacturer.name }}</p>
+
+  <h2>Drivers</h2>
+  <ul>
+    {% for driver in car.drivers.all %}
+      <li>
+        <a href="{% url 'taxi:driver-detail' driver.id %}">{{ driver.username }}</a>
+      </li>
+    {% empty %}
+      <li>No drivers assigned to this car.</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{% url 'taxi:car-update' car.id %}">Edit</a>
+  <a href="{% url 'taxi:car-delete' car.id %}">Delete</a>
+{% endblock %}
+

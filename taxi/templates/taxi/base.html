@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Taxi Service{% endblock %}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 900px;
+            line-height: 1.6;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            color: #222;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        button, .btn {
+            background: #0077cc;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        button:hover, .btn:hover {
+            background: #005fa3;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Taxi Service</h1>
+    <nav>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'car-list' %}">Cars</a>
+        <a href="{% url 'driver-list' %}">Drivers</a>
+        <a href="{% url 'manufacturer-list' %}">Manufacturers</a>
+    </nav>
+</header>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    Simple Taxi Service — Django project
+</footer>
+
+</body>
+</html>

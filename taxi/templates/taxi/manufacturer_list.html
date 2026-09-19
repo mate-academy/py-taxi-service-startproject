@@ -1,0 +1,22 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Manufacturers{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Manufacturers</h2>
+
+    <a class="btn" href="{% url 'manufacturer-create' %}">Add new manufacturer</a>
+
+    <ul>
+        {% for manufacturer in manufacturer_list %}
+            <li>
+                <a href="{% url 'manufacturer-detail' manufacturer.id %}">
+                    {{ manufacturer.name }} — {{ manufacturer.country }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+

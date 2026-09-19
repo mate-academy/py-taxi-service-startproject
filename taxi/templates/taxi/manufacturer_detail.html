@@ -1,0 +1,21 @@
+{% extends "taxi/base.html" %}
+
+{% block content %}
+  <h1>{{ manufacturer.name }}</h1>
+  <p><strong>Country:</strong> {{ manufacturer.country }}</p>
+
+  <h2>Cars</h2>
+  <ul>
+    {% for car in manufacturer.cars.all %}
+      <li>
+        <a href="{% url 'taxi:car-detail' car.id %}">{{ car.model }}</a>
+      </li>
+    {% empty %}
+      <li>No cars for this manufacturer.</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{% url 'taxi:manufacturer-update' manufacturer.id %}">Edit</a>
+  <a href="{% url 'taxi:manufacturer-delete' manufacturer.id %}">Delete</a>
+{% endblock %}
+

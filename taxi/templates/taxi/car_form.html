@@ -1,0 +1,18 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Car form{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Car form</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <a href="{% url 'car-list' %}">Back to car list</a>
+</div>
+{% endblock %}
+

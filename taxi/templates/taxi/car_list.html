@@ -1,0 +1,22 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Cars{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Cars</h2>
+
+    <a class="btn" href="{% url 'car-create' %}">Add new car</a>
+
+    <ul>
+        {% for car in car_list %}
+            <li>
+                <a href="{% url 'car-detail' car.id %}">
+                    {{ car.model }} — {{ car.manufacturer.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+

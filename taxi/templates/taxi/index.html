@@ -1,0 +1,18 @@
+{% extends "taxi/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Welcome to Taxi Service</h2>
+    <p>This is a simple Django project demonstrating models, views, templates and admin customization.</p>
+
+    <p>Use the navigation menu above to browse:</p>
+    <ul>
+        <li><a href="{% url 'car-list' %}">Cars</a></li>
+        <li><a href="{% url 'driver-list' %}">Drivers</a></li>
+        <li><a href="{% url 'manufacturer-list' %}">Manufacturers</a></li>
+    </ul>
+</div>
+{% endblock %}
+
