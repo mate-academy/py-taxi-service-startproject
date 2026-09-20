@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django / SQLite
+db.sqlite3
+*.log
+
+# PyCharm / IDE settings
+.idea/
+.vscode/
