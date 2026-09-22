@@ -19,7 +19,7 @@ class Car(models.Model):
     drivers = models.ManyToManyField("Driver", related_name="cars")
 
     def __str__(self) -> str:
-        return str(self.model)
+        return self.model
 
 class Driver(AbstractUser):
     license_number = models.CharField(max_length=255, unique=True)
