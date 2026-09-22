@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("name", models.CharField(max_length=100)),
+                ("name", models.CharField(max_length=100, unique=True)),
                 ("country", models.CharField(max_length=100)),
             ],
         ),
@@ -135,7 +135,7 @@ class Migration(migrations.Migration):
                         verbose_name="date joined"
                     ),
                 ),
-                ("license_number", models.CharField(max_length=100)),
+                ("license_number", models.CharField(max_length=100, unique=True)),
                 (
                     "groups",
                     models.ManyToManyField(

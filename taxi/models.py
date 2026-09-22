@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     country = models.CharField(max_length=100)
 
     def __str__(self):
@@ -26,7 +26,7 @@ class Car(models.Model):
 
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=100)
+    license_number = models.CharField(max_length=100, unique=True)
 
     def __str__(self):
-        return self.license_number
+        return self.first_name + " " + self.last_name + " (" + self.license_number + ")"
