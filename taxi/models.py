@@ -1,12 +1,15 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from taxi_service import settings
+
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.CharField(max_length=255)
 
-    ordering = ("name", "country")
+    class Meta:
+        ordering = ("name", "country")
 
     def __str__(self):
         return self.name
@@ -19,7 +22,7 @@ class Driver(AbstractUser):
         ordering = ("first_name", "last_name",)
 
     def __str__(self):
-        return f"{self.username} ({self.first_name} {self.last_name})"
+        return f"{self.username}: {self.license_number}"
 
 
 class Car(models.Model):
@@ -28,7 +31,7 @@ class Car(models.Model):
         Manufacturer, related_name="cars", on_delete=models.CASCADE
     )
     drivers = models.ManyToManyField(
-        Driver,
+        settings.AUTH_USER_MODEL,
         related_name="cars",
     )
 
