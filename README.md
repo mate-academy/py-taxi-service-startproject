@@ -64,3 +64,28 @@ category, so you can fill this field while adding a driver.
 ![image](https://mate-academy-images.s3.eu-central-1.amazonaws.com/python_pr_with_images.png)
 
 ### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
+
+## Run locally
+
+Use Python 3.10 or newer.
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+Open http://127.0.0.1:8000/admin/ to manage manufacturers, drivers, and cars.
+Set the driver's unique license number in **Additional info**.
+Cars can be searched by model and filtered by manufacturer.
+
+Run checks with:
+
+```sh
+python manage.py test
+python manage.py check
+python manage.py makemigrations --check --dry-run
+```
