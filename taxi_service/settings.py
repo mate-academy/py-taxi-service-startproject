@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTH_USER_MODEL = 'taxi.Driver'
+
 ROOT_URLCONF = 'taxi_service.urls'
 
 TEMPLATES = [
