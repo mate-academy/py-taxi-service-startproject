@@ -8,15 +8,10 @@ class Manufacturer(models.Model):
 
 
 class Driver(AbstractUser):
-    licence_number = models.CharField(unique=True)
-    username = models.CharField()
-    email = models.CharField()
-    password = models.CharField()
-    first_name = models.CharField()
-    last_name = models.CharField()
+    license_number = models.CharField(unique=True)
 
 
 class Car(models.Model):
     model = models.CharField()
-    manufacturer = models.ForeignKey(Manufacturer)
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     drivers = models.ManyToManyField(Driver)
