@@ -26,4 +26,9 @@ class DriverAdmin(UserAdmin):
         ("Important dates", {"fields": ("last_login", "date_joined")}),
         ("Additional info", {"fields": ("license_number",)}),
     )
-    add_fieldsets = ("Additional Info", {"fields": ("license_number",)})
+    add_fieldsets = (
+        (None, {
+            "classes": ("wide",),
+            "fields": ("username", "password1", "password2", "license_number"),
+        }),
+    )
