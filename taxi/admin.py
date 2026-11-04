@@ -29,6 +29,9 @@ class DriverAdmin(UserAdmin):
     add_fieldsets = (
         (None, {
             "classes": ("wide",),
-            "fields": ("username", "password1", "password2", "license_number"),
+            "fields": ("username", "password1", "password2"),
+        }),
+        ("Additional info", {
+            "fields": ("license_number",),
         }),
     )
