@@ -18,6 +18,12 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Driver)
 class DriverAdmin(UserAdmin):
     search_fields = ("license_number", "username", "email", "password", "first_name", "last_name")
-    list_display = ("license_number",)
-    fieldsets = ("Additional Info",)
-    add_fieldsets = ("Additional Info",)
+    list_display = ("username", "license_number", "is_staff", "is_active")
+    fieldsets = (
+        (None, {"fields": ("username", "password")}),
+        ("Personal info", {"fields": ("first_name", "last_name", "email")}),
+        ("Permissions", {"fields": ("is_active", "is_staff", "is_superuser", "groups", "user_permissions")}),
+        ("Important dates", {"fields": ("last_login", "date_joined")}),
+        ("Additional info", {"fields": ("license_number",)}),
+    )
+    add_fieldsets = ("Additional Info", {"fields": ("license_number",)})
