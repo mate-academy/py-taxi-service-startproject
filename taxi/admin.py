@@ -7,8 +7,8 @@ from taxi.models import Driver, Manufacturer, Car
 @admin.register(Driver)
 class DriverAdmin(admin.ModelAdmin):
     list_display = admin.ModelAdmin.list_display + ('license_number', )
-    fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number",)}), )
-    add_fieldsets = UserAdmin.add_fieldsets + (("Additional info", {"fields": ("license_number")}), )
+    fieldsets = UserAdmin.fieldsets + (("Additional info", {"fields": ("license_number", )}), )
+    add_fieldsets = UserAdmin.add_fieldsets + (("Additional info", {"fields": ("license_number", )}), )
 
 
 
