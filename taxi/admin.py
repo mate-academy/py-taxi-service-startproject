@@ -30,6 +30,5 @@ class DriverAdmin(UserAdmin):
         (None, {
             "classes": ("wide",),
             "fields": ("username", "password1", "password2", "license_number"),
-            ("Additional info", {"fields": ("license_number",)})
         }),
     )
