@@ -14,11 +14,14 @@ class Manufacturer(models.Model):
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE, related_name="cars")
-    drivers = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name="drivers")
+    manufacturer = models.ForeignKey(
+        Manufacturer, on_delete=models.CASCADE, related_name="cars")
+    drivers = models.ManyToManyField(
+        settings.AUTH_USER_MODEL, blank=True, related_name="drivers")
 
     def __str__(self):
         return f"{self.model}, {self.manufacturer}"
 
+
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=63,unique=True)
+    license_number = models.CharField(max_length=63, unique=True)
