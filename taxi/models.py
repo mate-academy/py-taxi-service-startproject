@@ -27,4 +27,4 @@ class Car(models.Model):
     drivers = models.ManyToManyField(Driver, related_name="cars")
 
     def __str__(self):
-        return f"{self.model}"
+        return self.model
