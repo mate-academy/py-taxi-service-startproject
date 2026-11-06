@@ -19,9 +19,9 @@ class Manufacturer(models.Model):
 class Car(models.Model):
     model = models.CharField(max_length=255)
     manufacturer = models.ForeignKey(
-        Manufacturer, on_delete=models.CASCADE, related_name="drivers")
+        Manufacturer, on_delete=models.CASCADE, related_name="manufacturers")
     drivers = models.ManyToManyField(
-        settings.AUTH_USER_MODEL, blank=True, related_name="drivers")
+        settings.AUTH_USER_MODEL, blank=True, related_name="cars")
 
 
     class Meta:
