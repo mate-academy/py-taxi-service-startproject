@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# Environment variables
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
