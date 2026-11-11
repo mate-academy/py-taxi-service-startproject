@@ -9,3 +9,5 @@ __pycache__/
 *.pyc
 *.sqlite3
 db.sqlite3
+*.sqlite
+*.db3
