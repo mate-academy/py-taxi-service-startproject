@@ -5,3 +5,5 @@ __pycache__/
 .vscode/
 .env
 db.sqlite3
+.sqlite
+.db3
