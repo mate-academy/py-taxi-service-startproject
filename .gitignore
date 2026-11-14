@@ -2,5 +2,9 @@
 venv/
 .venv/
 __pycache__/
-*.pyc
-db.sqlite3
+*.py[cod]
+
+*.sqlite
+*.sqlite3
+*.db
+*.db3
