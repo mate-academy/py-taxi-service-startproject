@@ -1,10 +1,10 @@
 body {
-  margin-top: 20px;
+  padding: 20px;
 }
 
-.sidebar-nav {
+.sidebar-nav a {
   margin-top: 20px;
-  color: #006b1b;
+  margin-left: 50px;
   padding: 0;
   list-style: none;
   text-decoration: none;
