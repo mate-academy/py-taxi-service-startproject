@@ -14,9 +14,9 @@ class DriverAdmin(UserAdmin):
         ("Additional info", {"fields": ("license_number",)}),
     )
 
+@admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     search_fields = ("model", )
     list_filter = ("manufacturer", )
 
 admin.site.register(Manufacturer)
-admin.site.register(Car)

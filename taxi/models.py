@@ -2,12 +2,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 class Driver(AbstractUser):
-    license_number = models.CharField(max_length=255, unique=True)
-    username = models.CharField(max_length=255, unique=True)
-    email = models.CharField(max_length=255)
-    password = models.CharField(max_length=255)
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    license_number = models.CharField(max_length=8, unique=True)
+
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=255, unique=True)
@@ -16,5 +12,5 @@ class Manufacturer(models.Model):
 
 class Car(models.Model):
     model = models.CharField(max_length=255)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
-    drivers = models.ManyToManyField(Driver)
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE, related_name='cars')
+    drivers = models.ManyToManyField(Driver, related_name='cars')
