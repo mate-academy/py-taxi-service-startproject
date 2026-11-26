@@ -3,6 +3,8 @@
 
 # Database
 *.sqlite3
+*.sqlite
+*.db3
 
 # Python
 __pycache__/
